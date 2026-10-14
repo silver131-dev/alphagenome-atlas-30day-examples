@@ -1,0 +1,31 @@
+﻿day,current_revised_teaching_title,published_ithome_article_url,link_status,code_folder
+1,破解 98% 基因暗物質 —— 從 DNA 變異找到可研究的線索,https://ithelp.ithome.com.tw/articles/10410043,PRIOR_CROSSWALK,
+2,基因調控與組織情境 —— 同一變異為何要看不同細胞,https://ithelp.ithome.com.tw/articles/10410050,PRIOR_CROSSWALK,examples/day02/
+3,保守性與分子預測 —— 兩種互補的變異線索,https://ithelp.ithome.com.tw/articles/10410841,PRIOR_CROSSWALK,examples/day03/
+4,In Silico 預先計算 —— 看懂 Variant View 與 Locus View,https://ithelp.ithome.com.tw/articles/10412124,PRIOR_CROSSWALK,examples/day04/
+5,DeepMind 生命科學版圖 —— 從 AlphaFold 結構到 AlphaGenome 調控,https://ithelp.ithome.com.tw/articles/10412212,PRIOR_CROSSWALK,examples/day05/
+6,百萬鹼基視野 —— 使用上下文捕捉三維空間中的遠距調控,https://ithelp.ithome.com.tw/articles/10412710,PRIOR_CROSSWALK,examples/day06/
+7,演算法核心拆解 —— CNN 與 Transformer 的多尺度融合,https://ithelp.ithome.com.tw/articles/10413647,PRIOR_CROSSWALK,examples/day07/
+8,單鹼基解析度圖譜 —— 一次讀懂剪接與染色質訊號,https://ithelp.ithome.com.tw/articles/10414152,PRIOR_CROSSWALK,examples/day08/
+9,突變效應預測本質 —— REF/ALT 差分與視窗位移,https://ithelp.ithome.com.tw/articles/10414660,PRIOR_CROSSWALK,examples/day09/
+10,1 PB 巨量資料庫 —— 用座標索引理解 Atlas 查詢,https://ithelp.ithome.com.tw/articles/10415326,PRIOR_CROSSWALK,examples/day10/
+11,打破維度災難 —— AVI 的 18 項輸入特徵怎麼讀,https://ithelp.ithome.com.tw/articles/10415888,PRIOR_CROSSWALK,examples/day11/
+12,讀懂 AVI 評分指標 —— 研究優先級不是發病機率,https://ithelp.ithome.com.tw/articles/10416613,PRIOR_CROSSWALK,examples/day12/
+13,DNM1 個案導讀 —— 從模型線索走到可追溯證據,https://ithelp.ithome.com.tw/articles/10416857,PRIOR_CROSSWALK,examples/day13/
+14,DNM1 剪接假說 —— 如何設計獨立驗證,https://ithelp.ithome.com.tw/articles/10417350,PRIOR_CROSSWALK,examples/day14/
+15,高通量飽和突變驗證 —— 從計算候選到實驗設計,https://ithelp.ithome.com.tw/articles/10417946,PRIOR_CROSSWALK,examples/day15/
+16,Python SDK 使用前檢查 —— 版本、金鑰與授權,https://ithelp.ithome.com.tw/articles/10418468,PRIOR_CROSSWALK,examples/day16/
+17,單點變異查詢入門 —— 從 SNV 輸出看懂模型回應,https://ithelp.ithome.com.tw/articles/10418899,PRIOR_CROSSWALK,examples/historical_readers/
+18,多模態軌跡練習 —— 比較不同組織的訊號變化,https://ithelp.ithome.com.tw/articles/10419245,PRIOR_CROSSWALK,examples/historical_readers/
+19,批次查詢與限流概念 —— asyncio 與重試策略實作,https://ithelp.ithome.com.tw/articles/10419813,PRIOR_CROSSWALK,examples/day19/
+20,基因座區間探索 —— 從座標系統理解 Motif 標註,https://ithelp.ithome.com.tw/articles/10420199,PRIOR_CROSSWALK,examples/day20/
+21,從 VCF 到研究審閱封包 —— QC、註釋與證據界線,https://ithelp.ithome.com.tw/articles/10420536,PRIOR_CROSSWALK,examples/variant_pipeline/
+22,VCF 資料前處理 —— FILTER、QUAL、REF 與 BED QC,https://ithelp.ithome.com.tw/articles/10420780,PRIOR_CROSSWALK,examples/variant_pipeline/
+23,自動化批次標註 —— 從缺失值到結構化欄位設計,https://ithelp.ithome.com.tw/articles/10421282,PRIOR_CROSSWALK,examples/variant_pipeline/
+24,REF/ALT 軌跡差分分析 —— 從訊號變化提出機制問題,https://ithelp.ithome.com.tw/articles/10421741,PRIOR_CROSSWALK,examples/variant_pipeline/
+25,合成基因座軌跡圖 —— 用 Python 畫出 REF/ALT 對比,https://ithelp.ithome.com.tw/articles/10422140,PRIOR_CROSSWALK,examples/variant_pipeline/
+26,Motif 文法與變異 —— 從序列偏好理解 REF/ALT 差異,https://ithelp.ithome.com.tw/articles/10422542,PRIOR_CROSSWALK,examples/variant_pipeline/
+27,封裝分析流程 —— 打造自己的 AlphaVariant CLI,https://ithelp.ithome.com.tw/articles/10422802,PRIOR_CROSSWALK,examples/variant_pipeline/
+28,AlphaGenome 的限制與證據追蹤 —— 學會說清楚我們不知道什麼,https://ithelp.ithome.com.tw/articles/10423103,USER_PROVIDED_PUBLISHED_URL,examples/variant_pipeline/
+29,AI 基因解密時代的倫理防線、數據隱私與未來十年精準醫療藍圖,https://ithelp.ithome.com.tw/articles/10423247,USER_PROVIDED_PUBLISHED_URL,examples/day29/
+30,30 天實戰總結 —— 從 AI Studio MVP 到可追溯的 Python 研究工具,https://ithelp.ithome.com.tw/articles/10423663,SEARCH_INDEX_VERIFIED_2026-10-14,examples/day30/

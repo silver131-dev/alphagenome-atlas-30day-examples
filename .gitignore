@@ -1,0 +1,21 @@
+# Local generated files and secrets
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.env
+.env.*
+!.env.example
+node_modules/
+private/
+scratch/
+.tmp/
+.DS_Store
+
+# Local runtime output created by readers (tracked example_output fixtures are excluded)
+/examples/variant_pipeline/day[0-9][0-9]_output/
+/examples/day[0-9][0-9]/day[0-9][0-9]_output/
+
+# Root-level outputs from README historical-reader examples
+/day17_output/
+/day18_output/

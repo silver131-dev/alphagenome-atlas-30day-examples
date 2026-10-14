@@ -1,0 +1,11 @@
+##fileformat=VCFv4.3
+##source=SYNTHETIC_EDUCATIONAL_DEMO
+##reference=TOY_NOT_GRCH38
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+chr1	100	.	A	C	60	PASS	.
+chr1	110	.	A	G,C	50	PASS	.
+chr1	120	.	A	T	10	PASS	.
+chr1	130	.	A	G	60	q10	.
+chr1	140	.	G	T	60	PASS	.
+chr1	150	.	A	AT	60	PASS	.
+chr1	160	.	A	T	.	PASS	.

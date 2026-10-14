@@ -1,0 +1,9 @@
+{
+  "schema": "alpha-atlas-synthetic-fixture-v1",
+  "origin": "HAND_AUTHORED_SYNTHETIC_ONLY",
+  "purpose": "offline educational reproducibility; integrity verification does NOT validate model provenance",
+  "files": {
+    "day17_synthetic_avi_fixture.json": "e5d7b569bfaf28b077f5e3ece826b354eada1edefa351b129df5baa2d5779cfb",
+    "day18_synthetic_splicing_fixture.json": "d09e9c5496703a78b25aba8278825198b35363c837ba4cca3a592e667c550b82"
+  }
+}

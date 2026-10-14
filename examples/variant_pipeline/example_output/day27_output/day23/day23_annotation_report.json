@@ -1,0 +1,156 @@
+{
+  "annotated_count": 2,
+  "annotation_columns": [
+    "variant_id",
+    "chrom",
+    "pos_1based",
+    "ref",
+    "alt",
+    "qc_status",
+    "qc_reason",
+    "synthetic_score",
+    "score_status",
+    "score_source",
+    "review_status",
+    "source_line"
+  ],
+  "annotations": [
+    {
+      "alt": "C",
+      "chrom": "chr1",
+      "pos_1based": 100,
+      "qc_reason": "TEACHING_QC_PASS",
+      "qc_status": "SELECTED",
+      "ref": "A",
+      "review_status": "REVIEW_REQUIRED",
+      "score_source": "SYNTHETIC_FIXTURE_ONLY",
+      "score_status": "SYNTHETIC_SCORE",
+      "source_line": 5,
+      "synthetic_score": 0.42,
+      "variant_id": "chr1:100:A>C"
+    },
+    {
+      "alt": "G",
+      "chrom": "chr1",
+      "pos_1based": 110,
+      "qc_reason": "TEACHING_QC_PASS",
+      "qc_status": "SELECTED",
+      "ref": "A",
+      "review_status": "REVIEW_REQUIRED",
+      "score_source": "SYNTHETIC_FIXTURE_ONLY",
+      "score_status": "SYNTHETIC_SCORE",
+      "source_line": 6,
+      "synthetic_score": -0.17,
+      "variant_id": "chr1:110:A>G"
+    },
+    {
+      "alt": "C",
+      "chrom": "chr1",
+      "pos_1based": 110,
+      "qc_reason": "TEACHING_QC_PASS",
+      "qc_status": "SELECTED",
+      "ref": "A",
+      "review_status": "REVIEW_REQUIRED",
+      "score_source": "SYNTHETIC_FIXTURE_ONLY",
+      "score_status": "MISSING_SCORE",
+      "source_line": 6,
+      "synthetic_score": null,
+      "variant_id": "chr1:110:A>C"
+    }
+  ],
+  "assembly": "TOY_NOT_GRCH38",
+  "atlas_query_performed": false,
+  "candidate_count": 8,
+  "clinical_interpretation": false,
+  "evidence_class": "SYNTHETIC_EDUCATIONAL_DEMO",
+  "input_provenance": {
+    "day21_review_packet": {
+      "filename": "day21_review_packet.json",
+      "sha256": "b418eba16e283aa2013f5af2df33d4b009e63850539e37fc2f03eac4788188f0"
+    }
+  },
+  "missing_data_policy": "JSON null + MISSING_SCORE; blank CSV numeric cell + MISSING_SCORE; never substitute zero",
+  "missing_score_count": 1,
+  "mode": "OFFLINE_ONLY",
+  "official_avi": false,
+  "pipeline_source": "REUSED_UNMODIFIED_DAY21_SYNTHETIC_QC",
+  "qc_order": [
+    "FILTER",
+    "BED",
+    "REF",
+    "INDEL",
+    "MISSING_QUAL",
+    "LOW_QUAL"
+  ],
+  "qc_rows": [
+    {
+      "filter": "PASS",
+      "qc_status": "SELECTED",
+      "qual": 60.0,
+      "reason": "TEACHING_QC_PASS",
+      "source_line": 5,
+      "variant_id": "chr1:100:A>C"
+    },
+    {
+      "filter": "PASS",
+      "qc_status": "SELECTED",
+      "qual": 50.0,
+      "reason": "TEACHING_QC_PASS",
+      "source_line": 6,
+      "variant_id": "chr1:110:A>G"
+    },
+    {
+      "filter": "PASS",
+      "qc_status": "SELECTED",
+      "qual": 50.0,
+      "reason": "TEACHING_QC_PASS",
+      "source_line": 6,
+      "variant_id": "chr1:110:A>C"
+    },
+    {
+      "filter": "PASS",
+      "qc_status": "REJECTED",
+      "qual": 10.0,
+      "reason": "OUTSIDE_TEACHING_BED",
+      "source_line": 7,
+      "variant_id": "chr1:120:A>T"
+    },
+    {
+      "filter": "q10",
+      "qc_status": "REJECTED",
+      "qual": 60.0,
+      "reason": "FILTER_NOT_PASS",
+      "source_line": 8,
+      "variant_id": "chr1:130:A>G"
+    },
+    {
+      "filter": "PASS",
+      "qc_status": "REJECTED",
+      "qual": 60.0,
+      "reason": "OUTSIDE_TEACHING_BED",
+      "source_line": 9,
+      "variant_id": "chr1:140:G>T"
+    },
+    {
+      "filter": "PASS",
+      "qc_status": "REVIEW_REQUIRED",
+      "qual": 60.0,
+      "reason": "INDEL_NOT_NORMALIZED",
+      "source_line": 10,
+      "variant_id": "chr1:150:A>AT"
+    },
+    {
+      "filter": "PASS",
+      "qc_status": "REVIEW_REQUIRED",
+      "qual": null,
+      "reason": "MISSING_QUAL",
+      "source_line": 11,
+      "variant_id": "chr1:160:A>T"
+    }
+  ],
+  "real_api_calls_this_run": 0,
+  "rejected_count": 3,
+  "review_required_qc_count": 2,
+  "schema_version": "day23.synthetic.annotation.v1",
+  "selected_count": 3
+}

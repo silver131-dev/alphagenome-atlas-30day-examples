@@ -1,0 +1,48 @@
+{
+  "aggregate_counts": {
+    "candidate_count": 8,
+    "day27_artifact_count_claimed_by_day28": 23,
+    "missing_score_count": 1,
+    "selected_count": 3
+  },
+  "anonymization_claim": "NOT_ESTABLISHED",
+  "demo_policy": {
+    "consent_verified": false,
+    "external_transfer_allowed": false,
+    "human_approval_completed": false,
+    "irb_or_ethics_review_verified": false,
+    "publish_allowed": false,
+    "purpose": "LOCAL_EDUCATION",
+    "real_patient_processing_allowed": false
+  },
+  "evidence_class": "SYNTHETIC_EDUCATIONAL_DEMO",
+  "governance_review_status": "MANUAL_REVIEW_REQUIRED",
+  "local_demo_token": "DEMO_e2cd76e780386c428d350791e9c77e4c",
+  "mode": "OFFLINE_ONLY",
+  "pseudonymization_claim": "NOT_ESTABLISHED",
+  "real_api_calls_this_run": 0,
+  "reidentification_risk_eliminated": false,
+  "release_gate": "BLOCKED",
+  "risk_notes": [
+    "Self-declared synthetic labels do not prove that a dataset is fictitious.",
+    "Random tokens remove neither genetic uniqueness nor potential family linkability.",
+    "SHA-256 can check local file consistency, not author identity or source authenticity.",
+    "No consent, ethics approval, clinical use, external transfer or legal compliance is established."
+  ],
+  "schema_version": "day29.synthetic.privacy_gate.v1",
+  "source": {
+    "day27_source_artifacts_independently_checked_this_run": false,
+    "day28_manifest_report_entry_matches": true,
+    "day28_manifest_sha256": "0ceb07d5c003123058e9092dfc4479e7c0b9e64b00fbfe35d63711ce66da320a",
+    "day28_manifest_signed": false,
+    "day28_report_sha256": "068967ac8644326e044b319b14a7e5f95e92379fe72d72d558cd2e0788396d29"
+  },
+  "status": "PASS_FOR_LOCAL_SYNTHETIC_EDUCATION_ONLY",
+  "suppressed_from_preview": [
+    "variant_ids",
+    "per_variant_scores",
+    "phenotype_details",
+    "local_demo_token"
+  ],
+  "token_is_anonymization": false
+}

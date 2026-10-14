@@ -1,0 +1,21 @@
+{
+  "evidence_class": "SYNTHETIC_EDUCATIONAL_DEMO",
+  "data_kind": "SYNTHETIC_EDUCATIONAL_DEMO",
+  "dataset_role": "ARTIFICIAL_COMPARISON_NOT_MODEL_OUTPUT",
+  "assembly": "TOY_NOT_GRCH38",
+  "variant_label": "TOY_COMPARISON",
+  "score_semantics": "TOY_AVI_LIKE_SCORE_AND_RANK",
+  "model_executed": false,
+  "native_response_retained": false,
+  "clinical_interpretation": false,
+  "avi_raw": 0.9,
+  "cdf_quantile": 0.98,
+  "phred_recorded": 16.989700043360184,
+  "feature_count": 18,
+  "top_feature": "MERGED_SPLICING",
+  "top_feature_weight": 0.45,
+  "top_feature_abs_share": 0.5,
+  "attribution_sum": 0.8,
+  "additivity_residual": 0.1,
+  "additivity_status": "REVIEW"
+}

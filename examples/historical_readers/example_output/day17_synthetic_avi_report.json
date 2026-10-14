@@ -1,0 +1,50 @@
+{
+  "day": 17,
+  "status": "SYNTHETIC_EDUCATIONAL_DEMO",
+  "variant": {
+    "chromosome": "chrToy",
+    "position_1based": 110,
+    "ref": "A",
+    "alt": "G",
+    "label": "FICTIONAL_VARIANT"
+  },
+  "avi_interpretation": {
+    "fictional_raw_score": 0.85,
+    "fictional_quantile": 0.99,
+    "percentile_percent": 99.0,
+    "fictional_phred_like": 20.0,
+    "phred_like_check": "CONSISTENT_WITH_-10log10(1-q)",
+    "fictional_feature_contributions": [
+      {
+        "feature": "TOY_SPLICE_CONTEXT",
+        "fictional_contribution": 0.44
+      },
+      {
+        "feature": "TOY_CHROMATIN_CONTEXT",
+        "fictional_contribution": 0.19
+      },
+      {
+        "feature": "TOY_SEQUENCE_CONTEXT",
+        "fictional_contribution": 0.12
+      }
+    ],
+    "illustrative_feature_sum": 0.75,
+    "illustrative_score_minus_feature_sum": 0.1,
+    "toy_additivity_review": "REVIEW",
+    "limits": [
+      "A score is not an ACMG classification or clinical risk estimate.",
+      "Toy feature contributions do not establish causal mechanism or additivity.",
+      "The quantile/PHRED-like teaching conversion does not validate a real model."
+    ]
+  },
+  "provenance": {
+    "source_class": "SYNTHETIC_FIXTURE",
+    "source_origin": "HAND_AUTHORED_SYNTHETIC_ONLY",
+    "integrity_status": "FIXTURE_SHA256_VERIFIED",
+    "fixture_sha256": "e5d7b569bfaf28b077f5e3ece826b354eada1edefa351b129df5baa2d5779cfb",
+    "real_api_calls_this_run": 0,
+    "real_model_predictions": false,
+    "reference_data_authenticity": "NOT_CLAIMED",
+    "usage": "RESEARCH_EDUCATION_ONLY_NOT_FOR_CLINICAL_USE"
+  }
+}

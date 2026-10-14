@@ -1,0 +1,21 @@
+{
+  "data_kind": "SYNTHETIC_EDUCATIONAL_DESIGN",
+  "scenario_id": "DNM1_CRYPTIC_SPLICE_TEACHING",
+  "gene_symbol": "DNM1",
+  "reference_allele": "G",
+  "alternative_allele": "A",
+  "genomic_context": "TOY_NO_COORDINATES",
+  "putative_extension_nt": 39,
+  "constructs": [
+    {"id": "WT", "role": "REFERENCE_CONTROL"},
+    {"id": "ALT", "role": "CANDIDATE_VARIANT"},
+    {"id": "REVERT", "role": "SEQUENCE_REVERSION_CONTROL"},
+    {"id": "EMPTY", "role": "VECTOR_BACKGROUND_CONTROL"}
+  ],
+  "cell_contexts": [
+    {"id": "NEURONAL_LIKE", "role": "HYPOTHESIS_RELEVANT_MODEL"},
+    {"id": "COMPARATOR", "role": "CONTEXT_COMPARATOR"}
+  ],
+  "planned_biological_replicates": 3,
+  "planned_assays": ["RT_PCR", "JUNCTION_SEQUENCING"]
+}

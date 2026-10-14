@@ -1,0 +1,54 @@
+{
+  "schema_version": "day27.input_bundle.v1",
+  "source": "Copied byte-for-byte from previously generated Day 21-26 OFFLINE author review packages; included for local standalone execution",
+  "files": {
+    "day21_offline_vcf_review_lab.py": {
+      "sha256": "5fef5c0a6564ecd9e7caadf9b7b11f1d1fab60fb1868e02fd0686c4a2f294da3",
+      "bytes": 14718
+    },
+    "day22_offline_qc_explorer_lab.py": {
+      "sha256": "3eb8dbd6e25c62a0562a14ac5c12c818a6b937f09d4b32ea7c4b1f1779fa0578",
+      "bytes": 13702
+    },
+    "day23_offline_annotation_lab.py": {
+      "sha256": "c7fe4fb43047a6c0684d910f2e2ba9ba6b41679d6b20a14d3e7b693a980b7d7d",
+      "bytes": 15236
+    },
+    "day24_offline_refalt_track_lab.py": {
+      "sha256": "ea293836d874371f5be7453cbef698132d3aead2e6e4b4c1540adfa8d126908b",
+      "bytes": 18298
+    },
+    "day25_offline_locus_plot_lab.py": {
+      "sha256": "d4b80f58e9dbb9d51c7826144dcb531429384143c7c5baf756244be2bc0a191b",
+      "bytes": 19154
+    },
+    "day26_offline_ppm_motif_lab.py": {
+      "sha256": "fb40832cfea89562158a20633c9f9352c1c8ae74bc261388d4719eb5d04b2056",
+      "bytes": 22409
+    },
+    "fixtures/day21_synthetic.vcf": {
+      "sha256": "adfc480a659e581a4d69f6b7b01890016ddc6ad0d6de6e709521fc6c2804800d",
+      "bytes": 299
+    },
+    "fixtures/day21_toy_reference.json": {
+      "sha256": "43e8cda00040afb123073f628b1249826f37d4fb4732aed578bf64ab28f9cd5a",
+      "bytes": 310
+    },
+    "fixtures/day21_synthetic_regions.bed": {
+      "sha256": "219e3264fc7b05d0d3c5ee8af57e07d6cb80df4e7618bcf11be4af2b7640a910",
+      "bytes": 95
+    },
+    "fixtures/day21_synthetic_scores.json": {
+      "sha256": "77f8ed4d642a12f1c04df271abeb5e54a844a0812279ebb26fe3c9f19fc0ee75",
+      "bytes": 142
+    },
+    "fixtures/day24_synthetic_tracks.json": {
+      "sha256": "ee24b5022f07794fb0d3b23ef43ee1a1a5f31d34793dbcb669f9d27374b03505",
+      "bytes": 606
+    },
+    "fixtures/day26_synthetic_motif_context.json": {
+      "sha256": "f0c2372d882b52408f931caf49122392732edb2db7db2786d7894c15c4f81191",
+      "bytes": 658
+    }
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "schema_version": "day28.synthetic.evidence_report.v1",
+  "status": "PASS",
+  "evidence_class": "SYNTHETIC_EDUCATIONAL_DEMO",
+  "mode": "OFFLINE_ONLY",
+  "assembly": "TOY_NOT_GRCH38",
+  "variant_id": "chr1:110:A>G",
+  "source_provenance": {
+    "source_kind": "DAY27_OFFLINE_SYNTHETIC_PIPELINE",
+    "source_schema_version": "day27.synthetic.pipeline.v1",
+    "source_bundle_sha256": "7604c9f1bbdf48185d48c6ea79bbcd5a5cdaf1dbecde780ea3a9f2eb662e005f",
+    "day27_summary_sha256": "3c9e77687e3bc00643d63232dec7bc227e508cac6845cd70b8f3d56b81915bfa",
+    "day27_run_manifest_sha256": "a2d54c70e189dc7dd50691d713c8b6490f9ae72602e094fc061a50bda72e6ff7",
+    "artifact_count_verified": 23,
+    "hash_check": "MATCH",
+    "signature_verified": false,
+    "native_alpha_genome_response_retained": false
+  },
+  "pipeline_counts": {
+    "candidate_count": 8,
+    "qc_selected": 3,
+    "qc_review_required": 2,
+    "qc_rejected": 3,
+    "annotated_count": 2,
+    "missing_score_count": 1,
+    "stage_count": 6
+  },
+  "annotations": [
+    {
+      "variant_id": "chr1:100:A>C",
+      "synthetic_score": 0.42,
+      "score_status": "SYNTHETIC_SCORE",
+      "review_status": "REVIEW_REQUIRED"
+    },
+    {
+      "variant_id": "chr1:110:A>G",
+      "synthetic_score": -0.17,
+      "score_status": "SYNTHETIC_SCORE",
+      "review_status": "REVIEW_REQUIRED"
+    },
+    {
+      "variant_id": "chr1:110:A>C",
+      "synthetic_score": null,
+      "score_status": "MISSING_SCORE",
+      "review_status": "REVIEW_REQUIRED"
+    }
+  ],
+  "missing_values": {
+    "missing_score_variant_ids": [
+      "chr1:110:A>C"
+    ],
+    "missing_is_zero": false,
+    "zero_is_a_valid_numeric_value": true
+  },
+  "teaching_observations": {
+    "ref_alt_delta": {
+      "position_1based": 110,
+      "value": -0.3,
+      "unit": "ARTIFICIAL_PROXY"
+    },
+    "motif_ppm_like": {
+      "MOTIF_A": -0.12,
+      "MOTIF_B": 0.12,
+      "unit": "ARTIFICIAL_PPM_MEAN_PROBABILITY"
+    },
+    "combined_biological_score": null,
+    "mechanism_status": "NOT_VALIDATED"
+  },
+  "model_limitations": [
+    {
+      "code": "SYNTHETIC_ONLY",
+      "text": "所有位置、REF/ALT 軌跡、分數與 Motif 均是人工教學資料；不是 AlphaGenome API 或實驗結果。"
+    },
+    {
+      "code": "ASSEMBLY_UNVERIFIED",
+      "text": "TOY_NOT_GRCH38；未獨立以 GRCh38 FASTA 核對 REF，也未進行臨床變異正規化。"
+    },
+    {
+      "code": "MODEL_TISSUE_NOT_RUN",
+      "text": "未執行真實模型或組織情境預測；不能把差分數值當成剪接或基因調控機制。"
+    },
+    {
+      "code": "POPULATION_TRANS_NOT_VALIDATED",
+      "text": "沒有族群泛化、跨區域 trans 調控、臨床疾病風險或效能校準的驗證。"
+    },
+    {
+      "code": "PROVENANCE_NOT_SIGNED",
+      "text": "SHA-256 只能檢查相對於本地 manifest 的內容一致性，不是數位簽章或來源真實性的證明。"
+    },
+    {
+      "code": "MANUAL_REVIEW_REQUIRED",
+      "text": "SELECTED 只代表通過人工教學 QC；不能直接生成 ACMG/AMP 分類、診斷或治療建議。"
+    }
+  ],
+  "manual_review": "REQUIRED",
+  "confidence_calibrated": false,
+  "clinical_classification": null,
+  "disease_probability": null,
+  "model_prediction": false,
+  "atlas_query_performed": false,
+  "clinical_interpretation": false,
+  "real_api_calls_this_run": 0
+}

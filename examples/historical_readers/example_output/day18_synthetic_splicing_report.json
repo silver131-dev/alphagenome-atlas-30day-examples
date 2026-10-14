@@ -1,0 +1,65 @@
+{
+  "day": 18,
+  "status": "SYNTHETIC_EDUCATIONAL_DEMO",
+  "variant": {
+    "chromosome": "chrToy",
+    "position_1based": 110,
+    "ref": "A",
+    "alt": "G",
+    "label": "FICTIONAL_VARIANT"
+  },
+  "context": {
+    "label": "FICTIONAL_NEURAL_LIKE_CONTEXT",
+    "strand": "+",
+    "coordinate_system": "1-based"
+  },
+  "splice_site_ref_alt_comparison": [
+    {
+      "position_1based": 115,
+      "site_type": "donor",
+      "ref": 0.8,
+      "alt": 0.1,
+      "delta_alt_minus_ref": -0.7,
+      "toy_direction": "decrease"
+    },
+    {
+      "position_1based": 118,
+      "site_type": "acceptor",
+      "ref": 0.25,
+      "alt": 0.5,
+      "delta_alt_minus_ref": 0.25,
+      "toy_direction": "increase"
+    }
+  ],
+  "rna_like_ref_alt_comparison": [
+    {
+      "position_1based": 112,
+      "ref": 12.0,
+      "alt": 9.0,
+      "delta_alt_minus_ref": -3.0,
+      "units": "arbitrary_fictional_units"
+    },
+    {
+      "position_1based": 114,
+      "ref": 6.0,
+      "alt": 8.5,
+      "delta_alt_minus_ref": 2.5,
+      "units": "arbitrary_fictional_units"
+    }
+  ],
+  "interpretation": {
+    "delta_definition": "ALT minus REF at the same 1-based coordinate and strand",
+    "negative_donor_delta": "Toy ALT signal is lower; not a validated prediction of exon skipping.",
+    "caution": "Artificial probability-like splicing values and RNA-like signals are neither measured RNA-seq nor official AlphaGenome predictions. Do not make clinical claims."
+  },
+  "provenance": {
+    "source_class": "SYNTHETIC_FIXTURE",
+    "source_origin": "HAND_AUTHORED_SYNTHETIC_ONLY",
+    "integrity_status": "FIXTURE_SHA256_VERIFIED",
+    "fixture_sha256": "d09e9c5496703a78b25aba8278825198b35363c837ba4cca3a592e667c550b82",
+    "real_api_calls_this_run": 0,
+    "real_model_predictions": false,
+    "reference_data_authenticity": "NOT_CLAIMED",
+    "usage": "RESEARCH_EDUCATION_ONLY_NOT_FOR_CLINICAL_USE"
+  }
+}

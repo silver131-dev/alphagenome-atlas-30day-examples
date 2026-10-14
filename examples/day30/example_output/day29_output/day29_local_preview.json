@@ -1,0 +1,14 @@
+{
+  "anonymization_claim": "NOT_ESTABLISHED",
+  "candidate_count": 8,
+  "data_kind": "SYNTHETIC_EDUCATIONAL_DEMO",
+  "external_transfer_allowed": false,
+  "governance_review_status": "MANUAL_REVIEW_REQUIRED",
+  "missing_score_count": 1,
+  "mode": "OFFLINE_ONLY",
+  "per_variant_data_included": false,
+  "publish_allowed": false,
+  "random_token_included": false,
+  "real_api_calls_this_run": 0,
+  "selected_count": 3
+}

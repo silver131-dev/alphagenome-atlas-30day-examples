@@ -1,0 +1,16 @@
+{
+  "data_kind": "SYNTHETIC_EDUCATIONAL_DEMO",
+  "assembly": "TOY_NOT_GRCH38",
+  "label": "Two independent toy experiments: changed ALT signal vs unchanged signal shifted by one coordinate",
+  "variant": "chrToy:104:A>G",
+  "reference_sequence": "TTGAACCGT",
+  "positions_1based": [100, 101, 102, 103, 104, 105, 106, 107, 108],
+  "reference_track": [0.1, 0.12, 0.18, 0.34, 0.7, 0.35, 0.2, 0.14, 0.1],
+  "alternate_track": [0.1, 0.12, 0.18, 0.34, 0.4, 0.5, 0.2, 0.14, 0.1],
+  "shift_only_windows": {
+    "ref_positions_1based": [100, 101, 102, 103, 104, 105, 106, 107],
+    "ref_values": [0.1, 0.12, 0.18, 0.34, 0.7, 0.35, 0.2, 0.14],
+    "alt_positions_1based": [101, 102, 103, 104, 105, 106, 107, 108],
+    "alt_values": [0.12, 0.18, 0.34, 0.7, 0.35, 0.2, 0.14, 0.1]
+  }
+}

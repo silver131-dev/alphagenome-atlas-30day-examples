@@ -1,0 +1,692 @@
+{
+  "data_kind": "SYNTHETIC_EDUCATIONAL_DEMO",
+  "assembly": "TOY_NOT_GRCH38",
+  "mode": "OFFLINE_ONLY",
+  "qc_policy": "FIRST_DECIDING_REASON_ONLY",
+  "qc_order": [
+    "FILTER",
+    "BED",
+    "REF",
+    "INDEL",
+    "MISSING_QUAL",
+    "LOW_QUAL"
+  ],
+  "bed_policy": "VCF_1BASED_POS_MINUS_ONE_ANCHOR_FOR_TOY_BED",
+  "min_qual_artificial_threshold": 20.0,
+  "candidate_count": 8,
+  "selected_count": 3,
+  "review_required_count": 2,
+  "rejected_count": 3,
+  "reason_counts": {
+    "FILTER_NOT_PASS": 1,
+    "INDEL_NOT_NORMALIZED": 1,
+    "MISSING_QUAL": 1,
+    "OUTSIDE_TEACHING_BED": 2,
+    "TEACHING_QC_PASS": 3
+  },
+  "qc_rows": [
+    {
+      "variant_id": "chr1:100:A>C",
+      "qc_status": "SELECTED",
+      "reason": "TEACHING_QC_PASS",
+      "bed_anchor_0based": 99,
+      "checked_steps": [
+        {
+          "check": "FILTER",
+          "passed": true,
+          "detail": "FILTER=PASS"
+        },
+        {
+          "check": "BED",
+          "passed": true,
+          "detail": "VCF POS 100 -> BED anchor 99"
+        },
+        {
+          "check": "REF",
+          "passed": true,
+          "detail": "REF matches artificial reference"
+        },
+        {
+          "check": "INDEL",
+          "passed": true,
+          "detail": "SNV teaching subset"
+        },
+        {
+          "check": "MISSING_QUAL",
+          "passed": true,
+          "detail": "QUAL present"
+        },
+        {
+          "check": "LOW_QUAL",
+          "passed": true,
+          "detail": "QUAL compared against artificial threshold 20"
+        }
+      ],
+      "not_checked_steps": [],
+      "source_line": 5,
+      "qual": 60.0,
+      "filter": "PASS"
+    },
+    {
+      "variant_id": "chr1:110:A>G",
+      "qc_status": "SELECTED",
+      "reason": "TEACHING_QC_PASS",
+      "bed_anchor_0based": 109,
+      "checked_steps": [
+        {
+          "check": "FILTER",
+          "passed": true,
+          "detail": "FILTER=PASS"
+        },
+        {
+          "check": "BED",
+          "passed": true,
+          "detail": "VCF POS 110 -> BED anchor 109"
+        },
+        {
+          "check": "REF",
+          "passed": true,
+          "detail": "REF matches artificial reference"
+        },
+        {
+          "check": "INDEL",
+          "passed": true,
+          "detail": "SNV teaching subset"
+        },
+        {
+          "check": "MISSING_QUAL",
+          "passed": true,
+          "detail": "QUAL present"
+        },
+        {
+          "check": "LOW_QUAL",
+          "passed": true,
+          "detail": "QUAL compared against artificial threshold 20"
+        }
+      ],
+      "not_checked_steps": [],
+      "source_line": 6,
+      "qual": 50.0,
+      "filter": "PASS"
+    },
+    {
+      "variant_id": "chr1:110:A>C",
+      "qc_status": "SELECTED",
+      "reason": "TEACHING_QC_PASS",
+      "bed_anchor_0based": 109,
+      "checked_steps": [
+        {
+          "check": "FILTER",
+          "passed": true,
+          "detail": "FILTER=PASS"
+        },
+        {
+          "check": "BED",
+          "passed": true,
+          "detail": "VCF POS 110 -> BED anchor 109"
+        },
+        {
+          "check": "REF",
+          "passed": true,
+          "detail": "REF matches artificial reference"
+        },
+        {
+          "check": "INDEL",
+          "passed": true,
+          "detail": "SNV teaching subset"
+        },
+        {
+          "check": "MISSING_QUAL",
+          "passed": true,
+          "detail": "QUAL present"
+        },
+        {
+          "check": "LOW_QUAL",
+          "passed": true,
+          "detail": "QUAL compared against artificial threshold 20"
+        }
+      ],
+      "not_checked_steps": [],
+      "source_line": 6,
+      "qual": 50.0,
+      "filter": "PASS"
+    },
+    {
+      "variant_id": "chr1:120:A>T",
+      "qc_status": "REJECTED",
+      "reason": "OUTSIDE_TEACHING_BED",
+      "bed_anchor_0based": 119,
+      "checked_steps": [
+        {
+          "check": "FILTER",
+          "passed": true,
+          "detail": "FILTER=PASS"
+        },
+        {
+          "check": "BED",
+          "passed": false,
+          "detail": "VCF POS 120 -> BED anchor 119"
+        }
+      ],
+      "not_checked_steps": [
+        "REF",
+        "INDEL",
+        "MISSING_QUAL",
+        "LOW_QUAL"
+      ],
+      "source_line": 7,
+      "qual": 10.0,
+      "filter": "PASS"
+    },
+    {
+      "variant_id": "chr1:130:A>G",
+      "qc_status": "REJECTED",
+      "reason": "FILTER_NOT_PASS",
+      "bed_anchor_0based": 129,
+      "checked_steps": [
+        {
+          "check": "FILTER",
+          "passed": false,
+          "detail": "FILTER is not PASS"
+        }
+      ],
+      "not_checked_steps": [
+        "BED",
+        "REF",
+        "INDEL",
+        "MISSING_QUAL",
+        "LOW_QUAL"
+      ],
+      "source_line": 8,
+      "qual": 60.0,
+      "filter": "q10"
+    },
+    {
+      "variant_id": "chr1:140:G>T",
+      "qc_status": "REJECTED",
+      "reason": "OUTSIDE_TEACHING_BED",
+      "bed_anchor_0based": 139,
+      "checked_steps": [
+        {
+          "check": "FILTER",
+          "passed": true,
+          "detail": "FILTER=PASS"
+        },
+        {
+          "check": "BED",
+          "passed": false,
+          "detail": "VCF POS 140 -> BED anchor 139"
+        }
+      ],
+      "not_checked_steps": [
+        "REF",
+        "INDEL",
+        "MISSING_QUAL",
+        "LOW_QUAL"
+      ],
+      "source_line": 9,
+      "qual": 60.0,
+      "filter": "PASS"
+    },
+    {
+      "variant_id": "chr1:150:A>AT",
+      "qc_status": "REVIEW_REQUIRED",
+      "reason": "INDEL_NOT_NORMALIZED",
+      "bed_anchor_0based": 149,
+      "checked_steps": [
+        {
+          "check": "FILTER",
+          "passed": true,
+          "detail": "FILTER=PASS"
+        },
+        {
+          "check": "BED",
+          "passed": true,
+          "detail": "VCF POS 150 -> BED anchor 149"
+        },
+        {
+          "check": "REF",
+          "passed": true,
+          "detail": "REF matches artificial reference"
+        },
+        {
+          "check": "INDEL",
+          "passed": false,
+          "detail": "indel requires independent normalization/review"
+        }
+      ],
+      "not_checked_steps": [
+        "MISSING_QUAL",
+        "LOW_QUAL"
+      ],
+      "source_line": 10,
+      "qual": 60.0,
+      "filter": "PASS"
+    },
+    {
+      "variant_id": "chr1:160:A>T",
+      "qc_status": "REVIEW_REQUIRED",
+      "reason": "MISSING_QUAL",
+      "bed_anchor_0based": 159,
+      "checked_steps": [
+        {
+          "check": "FILTER",
+          "passed": true,
+          "detail": "FILTER=PASS"
+        },
+        {
+          "check": "BED",
+          "passed": true,
+          "detail": "VCF POS 160 -> BED anchor 159"
+        },
+        {
+          "check": "REF",
+          "passed": true,
+          "detail": "REF matches artificial reference"
+        },
+        {
+          "check": "INDEL",
+          "passed": true,
+          "detail": "SNV teaching subset"
+        },
+        {
+          "check": "MISSING_QUAL",
+          "passed": false,
+          "detail": "QUAL missing (dot in synthetic VCF)"
+        }
+      ],
+      "not_checked_steps": [
+        "LOW_QUAL"
+      ],
+      "source_line": 11,
+      "qual": null,
+      "filter": "PASS"
+    }
+  ],
+  "supplementary_probe_cases": [
+    {
+      "label": "LOW_QUAL_INSIDE_BED",
+      "variant_id": "chr1:105:A>T",
+      "qc_status": "REJECTED",
+      "reason": "LOW_QUAL",
+      "bed_anchor_0based": 104,
+      "checked_steps": [
+        {
+          "check": "FILTER",
+          "passed": true,
+          "detail": "FILTER=PASS"
+        },
+        {
+          "check": "BED",
+          "passed": true,
+          "detail": "VCF POS 105 -> BED anchor 104"
+        },
+        {
+          "check": "REF",
+          "passed": true,
+          "detail": "REF matches artificial reference"
+        },
+        {
+          "check": "INDEL",
+          "passed": true,
+          "detail": "SNV teaching subset"
+        },
+        {
+          "check": "MISSING_QUAL",
+          "passed": true,
+          "detail": "QUAL present"
+        },
+        {
+          "check": "LOW_QUAL",
+          "passed": false,
+          "detail": "QUAL compared against artificial threshold 20"
+        }
+      ],
+      "not_checked_steps": [],
+      "source_line": null,
+      "qual": 10,
+      "filter": "PASS"
+    },
+    {
+      "label": "REF_MISMATCH_INSIDE_BED",
+      "variant_id": "chr1:106:G>T",
+      "qc_status": "REJECTED",
+      "reason": "REF_MISMATCH",
+      "bed_anchor_0based": 105,
+      "checked_steps": [
+        {
+          "check": "FILTER",
+          "passed": true,
+          "detail": "FILTER=PASS"
+        },
+        {
+          "check": "BED",
+          "passed": true,
+          "detail": "VCF POS 106 -> BED anchor 105"
+        },
+        {
+          "check": "REF",
+          "passed": false,
+          "detail": "REF mismatch / absent toy reference"
+        }
+      ],
+      "not_checked_steps": [
+        "INDEL",
+        "MISSING_QUAL",
+        "LOW_QUAL"
+      ],
+      "source_line": null,
+      "qual": 60.0,
+      "filter": "PASS"
+    },
+    {
+      "label": "LOW_QUAL_OUTSIDE_BED",
+      "variant_id": "chr1:120:A>T",
+      "qc_status": "REJECTED",
+      "reason": "OUTSIDE_TEACHING_BED",
+      "bed_anchor_0based": 119,
+      "checked_steps": [
+        {
+          "check": "FILTER",
+          "passed": true,
+          "detail": "FILTER=PASS"
+        },
+        {
+          "check": "BED",
+          "passed": false,
+          "detail": "VCF POS 120 -> BED anchor 119"
+        }
+      ],
+      "not_checked_steps": [
+        "REF",
+        "INDEL",
+        "MISSING_QUAL",
+        "LOW_QUAL"
+      ],
+      "source_line": null,
+      "qual": 10,
+      "filter": "PASS"
+    },
+    {
+      "label": "REF_MISMATCH_OUTSIDE_BED",
+      "variant_id": "chr1:140:G>T",
+      "qc_status": "REJECTED",
+      "reason": "OUTSIDE_TEACHING_BED",
+      "bed_anchor_0based": 139,
+      "checked_steps": [
+        {
+          "check": "FILTER",
+          "passed": true,
+          "detail": "FILTER=PASS"
+        },
+        {
+          "check": "BED",
+          "passed": false,
+          "detail": "VCF POS 140 -> BED anchor 139"
+        }
+      ],
+      "not_checked_steps": [
+        "REF",
+        "INDEL",
+        "MISSING_QUAL",
+        "LOW_QUAL"
+      ],
+      "source_line": null,
+      "qual": 60.0,
+      "filter": "PASS"
+    },
+    {
+      "label": "BED_FIRST_INCLUDED_POS",
+      "variant_id": "chr1:91:A>C",
+      "qc_status": "SELECTED",
+      "reason": "TEACHING_QC_PASS",
+      "bed_anchor_0based": 90,
+      "checked_steps": [
+        {
+          "check": "FILTER",
+          "passed": true,
+          "detail": "FILTER=PASS"
+        },
+        {
+          "check": "BED",
+          "passed": true,
+          "detail": "VCF POS 91 -> BED anchor 90"
+        },
+        {
+          "check": "REF",
+          "passed": true,
+          "detail": "REF matches artificial reference"
+        },
+        {
+          "check": "INDEL",
+          "passed": true,
+          "detail": "SNV teaching subset"
+        },
+        {
+          "check": "MISSING_QUAL",
+          "passed": true,
+          "detail": "QUAL present"
+        },
+        {
+          "check": "LOW_QUAL",
+          "passed": true,
+          "detail": "QUAL compared against artificial threshold 20"
+        }
+      ],
+      "not_checked_steps": [],
+      "source_line": null,
+      "qual": 60.0,
+      "filter": "PASS"
+    },
+    {
+      "label": "BED_LAST_INCLUDED_POS",
+      "variant_id": "chr1:115:A>C",
+      "qc_status": "SELECTED",
+      "reason": "TEACHING_QC_PASS",
+      "bed_anchor_0based": 114,
+      "checked_steps": [
+        {
+          "check": "FILTER",
+          "passed": true,
+          "detail": "FILTER=PASS"
+        },
+        {
+          "check": "BED",
+          "passed": true,
+          "detail": "VCF POS 115 -> BED anchor 114"
+        },
+        {
+          "check": "REF",
+          "passed": true,
+          "detail": "REF matches artificial reference"
+        },
+        {
+          "check": "INDEL",
+          "passed": true,
+          "detail": "SNV teaching subset"
+        },
+        {
+          "check": "MISSING_QUAL",
+          "passed": true,
+          "detail": "QUAL present"
+        },
+        {
+          "check": "LOW_QUAL",
+          "passed": true,
+          "detail": "QUAL compared against artificial threshold 20"
+        }
+      ],
+      "not_checked_steps": [],
+      "source_line": null,
+      "qual": 60.0,
+      "filter": "PASS"
+    },
+    {
+      "label": "BED_FIRST_EXCLUDED_POS",
+      "variant_id": "chr1:116:A>C",
+      "qc_status": "REJECTED",
+      "reason": "OUTSIDE_TEACHING_BED",
+      "bed_anchor_0based": 115,
+      "checked_steps": [
+        {
+          "check": "FILTER",
+          "passed": true,
+          "detail": "FILTER=PASS"
+        },
+        {
+          "check": "BED",
+          "passed": false,
+          "detail": "VCF POS 116 -> BED anchor 115"
+        }
+      ],
+      "not_checked_steps": [
+        "REF",
+        "INDEL",
+        "MISSING_QUAL",
+        "LOW_QUAL"
+      ],
+      "source_line": null,
+      "qual": 60.0,
+      "filter": "PASS"
+    },
+    {
+      "label": "SECOND_BED_FIRST_INCLUDED_POS",
+      "variant_id": "chr1:146:A>C",
+      "qc_status": "SELECTED",
+      "reason": "TEACHING_QC_PASS",
+      "bed_anchor_0based": 145,
+      "checked_steps": [
+        {
+          "check": "FILTER",
+          "passed": true,
+          "detail": "FILTER=PASS"
+        },
+        {
+          "check": "BED",
+          "passed": true,
+          "detail": "VCF POS 146 -> BED anchor 145"
+        },
+        {
+          "check": "REF",
+          "passed": true,
+          "detail": "REF matches artificial reference"
+        },
+        {
+          "check": "INDEL",
+          "passed": true,
+          "detail": "SNV teaching subset"
+        },
+        {
+          "check": "MISSING_QUAL",
+          "passed": true,
+          "detail": "QUAL present"
+        },
+        {
+          "check": "LOW_QUAL",
+          "passed": true,
+          "detail": "QUAL compared against artificial threshold 20"
+        }
+      ],
+      "not_checked_steps": [],
+      "source_line": null,
+      "qual": 60.0,
+      "filter": "PASS"
+    },
+    {
+      "label": "INDEL_NEEDS_REVIEW",
+      "variant_id": "chr1:150:A>AT",
+      "qc_status": "REVIEW_REQUIRED",
+      "reason": "INDEL_NOT_NORMALIZED",
+      "bed_anchor_0based": 149,
+      "checked_steps": [
+        {
+          "check": "FILTER",
+          "passed": true,
+          "detail": "FILTER=PASS"
+        },
+        {
+          "check": "BED",
+          "passed": true,
+          "detail": "VCF POS 150 -> BED anchor 149"
+        },
+        {
+          "check": "REF",
+          "passed": true,
+          "detail": "REF matches artificial reference"
+        },
+        {
+          "check": "INDEL",
+          "passed": false,
+          "detail": "indel requires independent normalization/review"
+        }
+      ],
+      "not_checked_steps": [
+        "MISSING_QUAL",
+        "LOW_QUAL"
+      ],
+      "source_line": null,
+      "qual": 60.0,
+      "filter": "PASS"
+    },
+    {
+      "label": "MISSING_QUAL_NEEDS_REVIEW",
+      "variant_id": "chr1:160:A>T",
+      "qc_status": "REVIEW_REQUIRED",
+      "reason": "MISSING_QUAL",
+      "bed_anchor_0based": 159,
+      "checked_steps": [
+        {
+          "check": "FILTER",
+          "passed": true,
+          "detail": "FILTER=PASS"
+        },
+        {
+          "check": "BED",
+          "passed": true,
+          "detail": "VCF POS 160 -> BED anchor 159"
+        },
+        {
+          "check": "REF",
+          "passed": true,
+          "detail": "REF matches artificial reference"
+        },
+        {
+          "check": "INDEL",
+          "passed": true,
+          "detail": "SNV teaching subset"
+        },
+        {
+          "check": "MISSING_QUAL",
+          "passed": false,
+          "detail": "QUAL missing (dot in synthetic VCF)"
+        }
+      ],
+      "not_checked_steps": [
+        "LOW_QUAL"
+      ],
+      "source_line": null,
+      "qual": null,
+      "filter": "PASS"
+    }
+  ],
+  "fixture_source": "DAY21_BYTE_IDENTICAL_SYNTHETIC_FIXTURES",
+  "source_parser_and_qc_module": "day21_offline_vcf_review_lab.py",
+  "real_genome_used": false,
+  "real_api_calls_this_run": 0,
+  "atlas_query_performed": false,
+  "clinical_interpretation": false,
+  "input_provenance": {
+    "vcf": {
+      "filename": "day21_synthetic.vcf",
+      "sha256": "adfc480a659e581a4d69f6b7b01890016ddc6ad0d6de6e709521fc6c2804800d"
+    },
+    "reference": {
+      "filename": "day21_toy_reference.json",
+      "sha256": "43e8cda00040afb123073f628b1249826f37d4fb4732aed578bf64ab28f9cd5a"
+    },
+    "regions": {
+      "filename": "day21_synthetic_regions.bed",
+      "sha256": "219e3264fc7b05d0d3c5ee8af57e07d6cb80df4e7618bcf11be4af2b7640a910"
+    }
+  }
+}

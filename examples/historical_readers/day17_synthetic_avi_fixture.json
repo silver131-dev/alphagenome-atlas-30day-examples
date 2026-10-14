@@ -1,0 +1,40 @@
+{
+  "schema": "alpha-atlas-synthetic-fixture-v1",
+  "day": 17,
+  "source": {
+    "kind": "SYNTHETIC_FIXTURE",
+    "created_for": "offline_education",
+    "origin": "hand_authored",
+    "model_called": false,
+    "api_calls": 0,
+    "real_model_output": false,
+    "patient_data": false
+  },
+  "variant": {
+    "chromosome": "chrToy",
+    "position_1based": 110,
+    "ref": "A",
+    "alt": "G",
+    "label": "FICTIONAL_VARIANT"
+  },
+  "avi": {
+    "raw_score": 0.85,
+    "quantile": 0.99,
+    "phred_like": 20.0,
+    "feature_contributions": [
+      {
+        "feature": "TOY_SPLICE_CONTEXT",
+        "value": 0.44
+      },
+      {
+        "feature": "TOY_CHROMATIN_CONTEXT",
+        "value": 0.19
+      },
+      {
+        "feature": "TOY_SEQUENCE_CONTEXT",
+        "value": 0.12
+      }
+    ]
+  },
+  "notes": "All scores and contributions are fictional. Do not infer real genomic function, phenotype, pathogenicity or clinical significance."
+}

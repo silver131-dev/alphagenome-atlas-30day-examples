@@ -1,0 +1,82 @@
+{
+  "schema_version": "day24.synthetic.refalt_delta.v1",
+  "evidence_class": "SYNTHETIC_EDUCATIONAL_DEMO",
+  "mode": "OFFLINE_ONLY",
+  "assembly": "TOY_NOT_GRCH38",
+  "variant_id": "chr1:110:A>G",
+  "track_label": "ARTIFICIAL_SIGNAL_PROXY",
+  "track_unit": "UNIT_INTERVAL_0_TO_1_TOY",
+  "biosample": "TOY_CELL_CONTEXT_NOT_REAL_TISSUE",
+  "coordinate_system": "1-based positions",
+  "point_count": 5,
+  "point_rows": [
+    {
+      "position_1based": 108,
+      "ref_proxy": 0.2,
+      "alt_proxy": 0.2,
+      "delta_alt_minus_ref": 0.0,
+      "variant_here": false
+    },
+    {
+      "position_1based": 109,
+      "ref_proxy": 0.3,
+      "alt_proxy": 0.55,
+      "delta_alt_minus_ref": 0.25,
+      "variant_here": false
+    },
+    {
+      "position_1based": 110,
+      "ref_proxy": 0.4,
+      "alt_proxy": 0.1,
+      "delta_alt_minus_ref": -0.3,
+      "variant_here": true
+    },
+    {
+      "position_1based": 111,
+      "ref_proxy": 0.25,
+      "alt_proxy": 0.35,
+      "delta_alt_minus_ref": 0.1,
+      "variant_here": false
+    },
+    {
+      "position_1based": 112,
+      "ref_proxy": 0.2,
+      "alt_proxy": 0.2,
+      "delta_alt_minus_ref": 0.0,
+      "variant_here": false
+    }
+  ],
+  "delta_definition": "ALT_proxy - REF_proxy",
+  "largest_absolute_delta_position_1based": 110,
+  "largest_absolute_delta": -0.3,
+  "day23_annotation_link": {
+    "variant_id": "chr1:110:A>G",
+    "qc_status": "SELECTED",
+    "score_status": "SYNTHETIC_SCORE",
+    "synthetic_score": -0.17,
+    "review_status": "REVIEW_REQUIRED",
+    "note": "Day23 annotation and Day24 track are independently invented; DO NOT combine their scores"
+  },
+  "mechanism_questions": [
+    "若是真實資料，訊號的測量模態與單位是什麼？",
+    "是否有對應細胞、基因組版本、轉錄本與獨立實驗證據？",
+    "相同位置的差分是否能重複，還是只是示範數列？"
+  ],
+  "mechanism_status": "HYPOTHESIS_ONLY_NOT_VALIDATED",
+  "model_prediction": false,
+  "official_atlas_data": false,
+  "reference_allele_verified": false,
+  "clinical_interpretation": false,
+  "atlas_query_performed": false,
+  "real_api_calls_this_run": 0,
+  "input_provenance": {
+    "track_fixture": {
+      "filename": "day24_synthetic_tracks.json",
+      "sha256": "ee24b5022f07794fb0d3b23ef43ee1a1a5f31d34793dbcb669f9d27374b03505"
+    },
+    "day23_packet": {
+      "filename": "day23_annotation_report.json",
+      "sha256": "6851debdc6347c44f690751a43d5e382eaef4fcfdfd81e3a51c550fff351d43f"
+    }
+  }
+}

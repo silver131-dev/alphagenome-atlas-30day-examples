@@ -1,0 +1,78 @@
+{
+  "schema_version": "day27.synthetic.pipeline.v1",
+  "evidence_class": "SYNTHETIC_EDUCATIONAL_DEMO",
+  "mode": "OFFLINE_ONLY",
+  "assembly": "TOY_NOT_GRCH38",
+  "status": "PASS",
+  "pipeline_stage_count": 6,
+  "modules_reused_unmodified": true,
+  "source_bundle_file_count": 12,
+  "source_manifest_sha256": "7604c9f1bbdf48185d48c6ea79bbcd5a5cdaf1dbecde780ea3a9f2eb662e005f",
+  "stages": [
+    {
+      "day": 21,
+      "module": "day21_offline_vcf_review_lab.py",
+      "status": "PASS",
+      "json_file": "day21/day21_review_packet.json",
+      "json_sha256": "b418eba16e283aa2013f5af2df33d4b009e63850539e37fc2f03eac4788188f0"
+    },
+    {
+      "day": 22,
+      "module": "day22_offline_qc_explorer_lab.py",
+      "status": "PASS",
+      "json_file": "day22/day22_qc_report.json",
+      "json_sha256": "38186b14502ed4e178363c1f4643fad61fe80276199e596f311232dba6bbf3a5"
+    },
+    {
+      "day": 23,
+      "module": "day23_offline_annotation_lab.py",
+      "status": "PASS",
+      "json_file": "day23/day23_annotation_report.json",
+      "json_sha256": "1d03a30700931cc925fbd9bfa090c9a18d1b70d4a44623ef367b22745bfc58e2"
+    },
+    {
+      "day": 24,
+      "module": "day24_offline_refalt_track_lab.py",
+      "status": "PASS",
+      "json_file": "day24/day24_track_delta_report.json",
+      "json_sha256": "4f422a1513e5aaffacb22505fd59e1fb6922fe53858a13b0a990b5399674a14d"
+    },
+    {
+      "day": 25,
+      "module": "day25_offline_locus_plot_lab.py",
+      "status": "PASS",
+      "json_file": "day25/day25_locus_summary.json",
+      "json_sha256": "07d4d627fb8d118623b4f7e777fbe267c68f8d4aff9d310745175fde61c211f5"
+    },
+    {
+      "day": 26,
+      "module": "day26_offline_ppm_motif_lab.py",
+      "status": "PASS",
+      "json_file": "day26/day26_motif_report.json",
+      "json_sha256": "0f8059daa90353cc50567131df4f38b73047db324bda3108cadb1d6916ccd132"
+    }
+  ],
+  "artifact_manifest": "day27_run_manifest.json",
+  "variant_id": "chr1:110:A>G",
+  "candidate_count": 8,
+  "selected_count": 3,
+  "qc_review_count": 2,
+  "qc_rejected_count": 3,
+  "annotated_count": 2,
+  "missing_score_count": 1,
+  "largest_absolute_delta_position_1based": 110,
+  "largest_absolute_delta": -0.3,
+  "ppm_anchor_deltas": {
+    "MOTIF_A": -0.12,
+    "MOTIF_B": 0.12
+  },
+  "biological_mechanism_status": "NOT_VALIDATED",
+  "score_combination_performed": false,
+  "score_source": "SYNTHETIC_FIXTURE_ONLY",
+  "model_prediction": false,
+  "official_atlas_data": false,
+  "atlas_query_performed": false,
+  "clinical_interpretation": false,
+  "manual_review": "REQUIRED",
+  "real_api_calls_this_run": 0
+}

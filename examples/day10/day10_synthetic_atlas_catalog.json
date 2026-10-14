@@ -1,0 +1,23 @@
+{
+  "data_kind": "SYNTHETIC_EDUCATIONAL_DEMO",
+  "assembly": "TOY_NOT_GRCH38",
+  "description": "Sixteen fictional single-nucleotide substitutions in two imaginary chromosomes; scores are artificial lookup values, not AVI.",
+  "rows": [
+    {"chrom":"chrToy","pos_1based":95,"ref":"G","alt":"A","toy_proxy_score":0.05},
+    {"chrom":"chrToy","pos_1based":100,"ref":"A","alt":"C","toy_proxy_score":0.42},
+    {"chrom":"chrToy","pos_1based":101,"ref":"G","alt":"T","toy_proxy_score":0.09},
+    {"chrom":"chrToy","pos_1based":108,"ref":"C","alt":"A","toy_proxy_score":0.3},
+    {"chrom":"chrToy","pos_1based":109,"ref":"A","alt":"G","toy_proxy_score":null},
+    {"chrom":"chrToy","pos_1based":110,"ref":"C","alt":"T","toy_proxy_score":0.74},
+    {"chrom":"chrToy","pos_1based":110,"ref":"C","alt":"G","toy_proxy_score":0.20},
+    {"chrom":"chrToy","pos_1based":111,"ref":"G","alt":"A","toy_proxy_score":0.08},
+    {"chrom":"chrToy","pos_1based":119,"ref":"A","alt":"G","toy_proxy_score":0.40},
+    {"chrom":"chrToy","pos_1based":120,"ref":"T","alt":"C","toy_proxy_score":0.60},
+    {"chrom":"chrToy","pos_1based":121,"ref":"A","alt":"T","toy_proxy_score":0.20},
+    {"chrom":"chrToy","pos_1based":130,"ref":"C","alt":"G","toy_proxy_score":0.31},
+    {"chrom":"chrToy","pos_1based":141,"ref":"T","alt":"C","toy_proxy_score":0.45},
+    {"chrom":"chrToy","pos_1based":152,"ref":"G","alt":"T","toy_proxy_score":0.15},
+    {"chrom":"chrDemo","pos_1based":100,"ref":"C","alt":"G","toy_proxy_score":0.99},
+    {"chrom":"chrDemo","pos_1based":110,"ref":"G","alt":"T","toy_proxy_score":0.22}
+  ]
+}

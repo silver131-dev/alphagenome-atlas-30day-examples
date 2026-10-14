@@ -1,0 +1,32 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Day 23 | Synthetic Annotation Schema</title>
+<style>:root{font:16px/1.55 system-ui,"Noto Sans TC",sans-serif;color:#2e3649;background:#f1f1f2}
+body{margin:auto;max-width:1140px;padding:30px 18px 65px}h1{font-size:1.85rem}
+.warning{background:#fff1de;border-left:5px solid #b8743e;padding:15px;border-radius:8px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.stats div,section{background:white;border:1px solid #dfdfdf;border-radius:12px;padding:16px;margin-top:18px}
+.num{font-size:2rem;font-weight:800;color:#286683}.label{font-size:.85rem;color:#697386}
+table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:10px;border-bottom:1px solid #eaeaea}
+th{background:#e9f0f5}section{overflow-x:auto}.missing{color:#a83b43}
+footer{font-size:.85rem;color:#687386;margin-top:25px}</style></head><body>
+<h1>Day 23｜從缺失值到結構化標註欄位</h1>
+<div class="warning"><strong>SYNTHETIC · OFFLINE_ONLY · TOY_NOT_GRCH38</strong><br>
+所有分數均為人工教學值，不是 AlphaGenome AVI，沒有患者資料或真實 API 呼叫。所有 SELECTED 仍待研究人工審閱。</div>
+<div class="stats"><div><span class="num">8</span><br><span class="label">候選</span></div>
+<div><span class="num">3</span><br><span class="label">通過教學 QC</span></div>
+<div><span class="num">2</span><br><span class="label">有人工分數</span></div>
+<div><span class="num">1</span><br><span class="label">分數缺值</span></div></div>
+<section><h2>標註表｜一筆候選＝一列資料</h2><p>請注意 <code>synthetic_score=null</code> 表示缺分數，並非 0；分數正負號沒有臨床風險意義。</p>
+<table><thead><tr><th>Variant</th><th>QC</th><th>人工分數</th><th>分數狀態</th><th>來源</th><th>審閱</th></tr></thead><tbody><tr><td>chr1:100:A&gt;C</td><td>SELECTED</td><td>0.42</td><td>SYNTHETIC_SCORE</td><td>SYNTHETIC_FIXTURE_ONLY</td><td>REVIEW_REQUIRED</td></tr>
+<tr><td>chr1:110:A&gt;G</td><td>SELECTED</td><td>-0.17</td><td>SYNTHETIC_SCORE</td><td>SYNTHETIC_FIXTURE_ONLY</td><td>REVIEW_REQUIRED</td></tr>
+<tr><td>chr1:110:A&gt;C</td><td>SELECTED</td><td>null</td><td>MISSING_SCORE</td><td>SYNTHETIC_FIXTURE_ONLY</td><td>REVIEW_REQUIRED</td></tr></tbody></table></section>
+<section><h2>全部 QC 紀錄（保留失敗原因）</h2><table><thead><tr><th>Variant</th><th>QC Status</th><th>Reason</th></tr></thead><tbody><tr><td>chr1:100:A&gt;C</td><td>SELECTED</td><td>TEACHING_QC_PASS</td></tr>
+<tr><td>chr1:110:A&gt;G</td><td>SELECTED</td><td>TEACHING_QC_PASS</td></tr>
+<tr><td>chr1:110:A&gt;C</td><td>SELECTED</td><td>TEACHING_QC_PASS</td></tr>
+<tr><td>chr1:120:A&gt;T</td><td>REJECTED</td><td>OUTSIDE_TEACHING_BED</td></tr>
+<tr><td>chr1:130:A&gt;G</td><td>REJECTED</td><td>FILTER_NOT_PASS</td></tr>
+<tr><td>chr1:140:G&gt;T</td><td>REJECTED</td><td>OUTSIDE_TEACHING_BED</td></tr>
+<tr><td>chr1:150:A&gt;AT</td><td>REVIEW_REQUIRED</td><td>INDEL_NOT_NORMALIZED</td></tr>
+<tr><td>chr1:160:A&gt;T</td><td>REVIEW_REQUIRED</td><td>MISSING_QUAL</td></tr></tbody></table></section>
+<footer>schema_version: day23.synthetic.annotation.v1 · input provenance SHA-256 另見 JSON · official_avi=false · real_api_calls_this_run=0 · 研究教育用途。</footer></body></html>

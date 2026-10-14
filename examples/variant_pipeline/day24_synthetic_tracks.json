@@ -1,0 +1,17 @@
+{
+  "schema_version": "day24.synthetic.refalt_tracks.v1",
+  "evidence_class": "SYNTHETIC_EDUCATIONAL_DEMO",
+  "mode": "OFFLINE_ONLY",
+  "assembly": "TOY_NOT_GRCH38",
+  "variant_id": "chr1:110:A>G",
+  "track_label": "ARTIFICIAL_SIGNAL_PROXY",
+  "track_unit": "UNIT_INTERVAL_0_TO_1_TOY",
+  "biosample": "TOY_CELL_CONTEXT_NOT_REAL_TISSUE",
+  "coordinate_system": "1-based positions",
+  "positions_1based": [108, 109, 110, 111, 112],
+  "ref": [0.20, 0.30, 0.40, 0.25, 0.20],
+  "alt": [0.20, 0.55, 0.10, 0.35, 0.20],
+  "model_prediction": false,
+  "official_atlas_data": false,
+  "real_api_calls_this_run": 0
+}

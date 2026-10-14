@@ -1,0 +1,29 @@
+﻿day,approved_title,approved_full_heading,title_status,body_status,online_update_status
+01,破解 98% 基因暗物質 —— 從 DNA 變異找到可研究的線索,AlphaGenome Atlas 實戰 | Day 01 | 破解 98% 基因暗物質 —— 從 DNA 變異找到可研究的線索,AUTHOR_APPROVED,PENDING_AUTHOR_REVIEW,NOT_AUTHORIZED
+02,基因調控與組織情境 —— 同一變異為何要看不同細胞,AlphaGenome Atlas 實戰 | Day 02 | 基因調控與組織情境 —— 同一變異為何要看不同細胞,AUTHOR_APPROVED,PENDING_AUTHOR_REVIEW,NOT_AUTHORIZED
+03,保守性與分子預測 —— 兩種互補的變異線索,AlphaGenome Atlas 實戰 | Day 03 | 保守性與分子預測 —— 兩種互補的變異線索,AUTHOR_APPROVED,PENDING_AUTHOR_REVIEW,NOT_AUTHORIZED
+04,In Silico 預先計算 —— 看懂 Variant View 與 Locus View,AlphaGenome Atlas 實戰 | Day 04 | In Silico 預先計算 —— 看懂 Variant View 與 Locus View,AUTHOR_APPROVED,PENDING_AUTHOR_REVIEW,NOT_AUTHORIZED
+05,DeepMind 生命科學版圖 —— 從 AlphaFold 結構到 AlphaGenome 調控,AlphaGenome Atlas 實戰 | Day 05 | DeepMind 生命科學版圖 —— 從 AlphaFold 結構到 AlphaGenome 調控,AUTHOR_APPROVED,PENDING_AUTHOR_REVIEW,NOT_AUTHORIZED
+06,百萬鹼基視野 —— 使用上下文捕捉三維空間中的遠距調控,AlphaGenome Atlas 實戰 | Day 06 | 百萬鹼基視野 —— 使用上下文捕捉三維空間中的遠距調控,AUTHOR_APPROVED,PENDING_AUTHOR_REVIEW,NOT_AUTHORIZED
+07,演算法核心拆解 —— CNN 與 Transformer 的多尺度融合,AlphaGenome Atlas 實戰 | Day 07 | 演算法核心拆解 —— CNN 與 Transformer 的多尺度融合,AUTHOR_APPROVED,PENDING_AUTHOR_REVIEW,NOT_AUTHORIZED
+08,單鹼基解析度圖譜 —— 一次讀懂剪接與染色質訊號,AlphaGenome Atlas 實戰 | Day 08 | 單鹼基解析度圖譜 —— 一次讀懂剪接與染色質訊號,AUTHOR_APPROVED,PENDING_AUTHOR_REVIEW,NOT_AUTHORIZED
+09,突變效應預測本質 —— REF/ALT 差分與視窗位移,AlphaGenome Atlas 實戰 | Day 09 | 突變效應預測本質 —— REF/ALT 差分與視窗位移,AUTHOR_APPROVED,PENDING_AUTHOR_REVIEW,NOT_AUTHORIZED
+10,1 PB 巨量資料庫 —— 用座標索引理解 Atlas 查詢,AlphaGenome Atlas 實戰 | Day 10 | 1 PB 巨量資料庫 —— 用座標索引理解 Atlas 查詢,AUTHOR_APPROVED,PENDING_AUTHOR_REVIEW,NOT_AUTHORIZED
+11,打破維度災難 —— AVI 的 18 項輸入特徵怎麼讀,AlphaGenome Atlas 實戰 | Day 11 | 打破維度災難 —— AVI 的 18 項輸入特徵怎麼讀,AUTHOR_APPROVED,PENDING_AUTHOR_REVIEW,NOT_AUTHORIZED
+12,讀懂 AVI 評分指標 —— 研究優先級不是發病機率,AlphaGenome Atlas 實戰 | Day 12 | 讀懂 AVI 評分指標 —— 研究優先級不是發病機率,AUTHOR_APPROVED,PENDING_AUTHOR_REVIEW,NOT_AUTHORIZED
+13,DNM1 個案導讀 —— 從模型線索走到可追溯證據,AlphaGenome Atlas 實戰 | Day 13 | DNM1 個案導讀 —— 從模型線索走到可追溯證據,AUTHOR_APPROVED,PENDING_AUTHOR_REVIEW,NOT_AUTHORIZED
+14,DNM1 剪接假說 —— 如何設計獨立驗證,AlphaGenome Atlas 實戰 | Day 14 | DNM1 剪接假說 —— 如何設計獨立驗證,AUTHOR_APPROVED,PENDING_AUTHOR_REVIEW,NOT_AUTHORIZED
+15,高通量飽和突變驗證 —— 從計算候選到實驗設計,AlphaGenome Atlas 實戰 | Day 15 | 高通量飽和突變驗證 —— 從計算候選到實驗設計,AUTHOR_APPROVED,PENDING_AUTHOR_REVIEW,NOT_AUTHORIZED
+16,Python SDK 使用前檢查 —— 版本、金鑰與授權,AlphaGenome Atlas 實戰 | Day 16 | Python SDK 使用前檢查 —— 版本、金鑰與授權,AUTHOR_APPROVED,PENDING_AUTHOR_REVIEW,NOT_AUTHORIZED
+17,單點變異查詢入門 —— 從 SNV 輸出看懂模型回應,AlphaGenome Atlas 實戰 | Day 17 | 單點變異查詢入門 —— 從 SNV 輸出看懂模型回應,AUTHOR_APPROVED,PENDING_AUTHOR_REVIEW,NOT_AUTHORIZED
+18,多模態軌跡練習 —— 比較不同組織的訊號變化,AlphaGenome Atlas 實戰 | Day 18 | 多模態軌跡練習 —— 比較不同組織的訊號變化,AUTHOR_APPROVED,PENDING_AUTHOR_REVIEW,NOT_AUTHORIZED
+19,批次查詢與限流概念 —— asyncio 與重試策略實作,AlphaGenome Atlas 實戰 | Day 19 | 批次查詢與限流概念 —— asyncio 與重試策略實作,AUTHOR_APPROVED,PENDING_AUTHOR_REVIEW,NOT_AUTHORIZED
+20,基因座區間探索 —— 從座標系統理解 Motif 標註,AlphaGenome Atlas 實戰 | Day 20 | 基因座區間探索 —— 從座標系統理解 Motif 標註,AUTHOR_APPROVED,PENDING_AUTHOR_REVIEW,NOT_AUTHORIZED
+21,從 VCF 到研究審閱封包 —— QC、註釋與證據界線,AlphaGenome Atlas 實戰 | Day 21 | 從 VCF 到研究審閱封包 —— QC、註釋與證據界線,AUTHOR_APPROVED,PENDING_AUTHOR_REVIEW,NOT_AUTHORIZED
+22,VCF 資料前處理 —— FILTER、QUAL、REF 與 BED QC,AlphaGenome Atlas 實戰 | Day 22 | VCF 資料前處理 —— FILTER、QUAL、REF 與 BED QC,AUTHOR_APPROVED,PENDING_AUTHOR_REVIEW,NOT_AUTHORIZED
+23,自動化批次標註 —— 從缺失值到結構化欄位設計,AlphaGenome Atlas 實戰 | Day 23 | 自動化批次標註 —— 從缺失值到結構化欄位設計,AUTHOR_APPROVED,PENDING_AUTHOR_REVIEW,NOT_AUTHORIZED
+24,REF/ALT 軌跡差分分析 —— 從訊號變化提出機制問題,AlphaGenome Atlas 實戰 | Day 24 | REF/ALT 軌跡差分分析 —— 從訊號變化提出機制問題,AUTHOR_APPROVED,PENDING_AUTHOR_REVIEW,NOT_AUTHORIZED
+25,合成基因座軌跡圖 —— 用 Python 畫出 REF/ALT 對比,AlphaGenome Atlas 實戰 | Day 25 | 合成基因座軌跡圖 —— 用 Python 畫出 REF/ALT 對比,AUTHOR_APPROVED,PENDING_AUTHOR_REVIEW,NOT_AUTHORIZED
+26,Motif 文法與變異 —— 從序列偏好理解 REF/ALT 差異,AlphaGenome Atlas 實戰 | Day 26 | Motif 文法與變異 —— 從序列偏好理解 REF/ALT 差異,AUTHOR_APPROVED,PENDING_AUTHOR_REVIEW,NOT_AUTHORIZED
+27,封裝分析流程 —— 打造自己的 AlphaVariant CLI,AlphaGenome Atlas 實戰 | Day 27 | 封裝分析流程 —— 打造自己的 AlphaVariant CLI,AUTHOR_APPROVED,PENDING_AUTHOR_REVIEW,NOT_AUTHORIZED
+28,AlphaGenome 的限制與證據追蹤 —— 學會說清楚我們不知道什麼,AlphaGenome Atlas 實戰 | Day 28 | AlphaGenome 的限制與證據追蹤 —— 學會說清楚我們不知道什麼,AUTHOR_APPROVED,PENDING_AUTHOR_REVIEW,NOT_AUTHORIZED

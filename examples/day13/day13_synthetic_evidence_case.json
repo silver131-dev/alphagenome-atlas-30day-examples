@@ -1,0 +1,20 @@
+{
+  "schema_version": "DAY13_SYNTHETIC_EVIDENCE_V1",
+  "data_kind": "SYNTHETIC_EDUCATIONAL_CASE",
+  "scenario_id": "DNM1_INSPIRED_TOY_EVIDENCE",
+  "gene_symbol": "DNM1",
+  "assembly": "TOY_NOT_GRCH38",
+  "variant_id": "chrToy:101:G>A",
+  "phenotype_label": "SYNTHETIC_EARLY_SEIZURES",
+  "clinical_interpretation": false,
+  "real_api_calls": 0,
+  "experiment_performed": false,
+  "evidence_rows": [
+    {"step_id": "PANEL", "evidence_type": "GENE_PANEL", "source_id": "TOY_PANEL_NOTE", "status": "INCONCLUSIVE", "observed_value": null, "review_question": "Could unassessed noncoding regions remain?"},
+    {"step_id": "WES", "evidence_type": "EXOME_REVIEW", "source_id": "TOY_WES_NOTE", "status": "INCONCLUSIVE", "observed_value": null, "review_question": "Was the candidate intronic region covered?"},
+    {"step_id": "WGS", "evidence_type": "GENOME_ANNOTATION", "source_id": "TOY_WGS_RECORD", "status": "TOY_VARIANT_PRESENT", "observed_value": "TOY_INTRONIC_CANDIDATE", "review_question": "Which transcript and reference assembly?"},
+    {"step_id": "BLOOD_RNA", "evidence_type": "RNA_CONTEXT", "source_id": "TOY_BLOOD_RNA", "status": "INCONCLUSIVE", "observed_value": null, "review_question": "Is the relevant transcript measurable in blood?"},
+    {"step_id": "MODEL", "evidence_type": "PREDICTION_HYPOTHESIS", "source_id": "TOY_MODEL_HINT", "status": "HYPOTHESIS_ONLY", "observed_value": null, "review_question": "Which biosample, transcript and splice junction?"},
+    {"step_id": "VALIDATION", "evidence_type": "INDEPENDENT_RNA_VALIDATION", "source_id": "TOY_NO_EXPERIMENT", "status": "NOT_PERFORMED", "observed_value": null, "review_question": "What RT-PCR or junction-sequencing result could refute it?"}
+  ]
+}

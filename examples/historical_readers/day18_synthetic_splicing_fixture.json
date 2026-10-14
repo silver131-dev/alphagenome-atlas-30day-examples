@@ -1,0 +1,30 @@
+{
+  "schema": "alpha-atlas-synthetic-fixture-v1",
+  "day": 18,
+  "source": {
+    "kind": "SYNTHETIC_FIXTURE",
+    "created_for": "offline_education",
+    "origin": "hand_authored",
+    "model_called": false,
+    "api_calls": 0,
+    "real_model_output": false,
+    "patient_data": false
+  },
+  "variant": {
+    "chromosome": "chrToy",
+    "position_1based": 110,
+    "ref": "A",
+    "alt": "G",
+    "label": "FICTIONAL_VARIANT"
+  },
+  "context": {"label": "FICTIONAL_NEURAL_LIKE_CONTEXT", "strand": "+", "coordinate_system": "1-based"},
+  "splice_sites": [
+    {"position_1based": 115, "site_type": "donor", "ref": 0.8, "alt": 0.1},
+    {"position_1based": 118, "site_type": "acceptor", "ref": 0.25, "alt": 0.5}
+  ],
+  "rna_seq_toy_signals": [
+    {"position_1based": 112, "ref": 12.0, "alt": 9.0},
+    {"position_1based": 114, "ref": 6.0, "alt": 8.5}
+  ],
+  "notes": "Synthetic donor/acceptor probability-like values and arbitrary-unit RNA-like signals; NOT measured RNA-seq or AlphaGenome model predictions."
+}

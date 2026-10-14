@@ -1,0 +1,20 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Day28 | Evidence Reporter</title>
+<style>body{margin:0;background:#E5DEDA;color:#344256;font:17px/1.65 system-ui,"Noto Sans TC",sans-serif}
+main{max-width:1120px;margin:auto;padding:34px 20px 60px}section,header{background:#fffaf8;border-radius:18px;padding:23px;margin:14px 0}
+h1{margin:0}.warn{border-left:6px solid #b06b72;background:#fff2ed;padding:17px;border-radius:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:13px}.tile{border:1px solid #eee0db;border-radius:12px;padding:16px}
+.big{font-size:2em;font-weight:800;color:#316d6a}table{width:100%;border-collapse:collapse}td,th{padding:10px;border-bottom:1px solid #e8dbd7;text-align:left}
+th{background:#f2e7e2}img{width:100%;height:auto}a{color:#365b86}small{color:#666}</style></head><body><main>
+<header><h1>Day 28｜限制與證據追蹤</h1><p>學會說清楚我們不知道什麼 — OFFLINE 教學報告</p></header>
+<div class="warn"><b>SYNTHETIC EDUCATIONAL DEMO · TOY_NOT_GRCH38</b><br>這些不是 AlphaGenome 真實輸出、病人資料或診斷。SHA-256 僅核對本地檔案完整性，並非權威來源認證。</div>
+<section><div class="grid"><div class="tile"><div class="big">23</div>已核對檔案</div>
+<div class="tile"><div class="big">8</div>候選</div>
+<div class="tile"><div class="big">1</div>缺人工分數</div>
+<div class="tile"><div class="big">REQUIRED</div>人工審閱</div></div></section>
+<section><h2>從 Day 27 到證據報告</h2><img src="day28_evidence_map.svg" alt="Provenance, missing values, limitations and manual review"><p>Day 27 來源完整性：MATCH；但未驗證原生模型或資料來源真實性。</p></section>
+<section><h2>QC 後的人工候選</h2><table><thead><tr><th>Variant</th><th>人工分數</th><th>分數狀態</th><th>審閱</th></tr></thead><tbody><tr><td><code>chr1:100:A&gt;C</code></td><td>0.42</td><td>SYNTHETIC_SCORE</td><td>REVIEW_REQUIRED</td></tr><tr><td><code>chr1:110:A&gt;G</code></td><td>-0.17</td><td>SYNTHETIC_SCORE</td><td>REVIEW_REQUIRED</td></tr><tr><td><code>chr1:110:A&gt;C</code></td><td>null</td><td>MISSING_SCORE</td><td>REVIEW_REQUIRED</td></tr></tbody></table></section>
+<section><h2>模型／證據限制</h2><ul><li><b>SYNTHETIC_ONLY</b> — 所有位置、REF/ALT 軌跡、分數與 Motif 均是人工教學資料；不是 AlphaGenome API 或實驗結果。</li><li><b>ASSEMBLY_UNVERIFIED</b> — TOY_NOT_GRCH38；未獨立以 GRCh38 FASTA 核對 REF，也未進行臨床變異正規化。</li><li><b>MODEL_TISSUE_NOT_RUN</b> — 未執行真實模型或組織情境預測；不能把差分數值當成剪接或基因調控機制。</li><li><b>POPULATION_TRANS_NOT_VALIDATED</b> — 沒有族群泛化、跨區域 trans 調控、臨床疾病風險或效能校準的驗證。</li><li><b>PROVENANCE_NOT_SIGNED</b> — SHA-256 只能檢查相對於本地 manifest 的內容一致性，不是數位簽章或來源真實性的證明。</li><li><b>MANUAL_REVIEW_REQUIRED</b> — SELECTED 只代表通過人工教學 QC；不能直接生成 ACMG/AMP 分類、診斷或治療建議。</li></ul></section>
+<section><a href="day28_evidence_report.json">完整 JSON</a> · <a href="day28_evidence_report.md">繁中 Markdown</a> · <a href="day28_evidence_table.csv">CSV</a></section>
+<small>Research Use Only · OFFLINE_ONLY · No clinical classification · Real API calls: 0</small>
+</main></body></html>

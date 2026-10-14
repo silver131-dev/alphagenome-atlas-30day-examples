@@ -1,0 +1,129 @@
+{
+  "evidence_class": "SYNTHETIC_EDUCATIONAL_DEMO",
+  "mode": "OFFLINE_ONLY",
+  "assembly": "TOY_NOT_GRCH38",
+  "candidate_count": 8,
+  "selected_count": 3,
+  "review_required_qc_count": 2,
+  "rejected_count": 3,
+  "missing_score_count": 1,
+  "qc_order": [
+    "FILTER",
+    "BED",
+    "REF",
+    "INDEL",
+    "MISSING_QUAL",
+    "LOW_QUAL"
+  ],
+  "qc_rows": [
+    {
+      "variant_id": "chr1:100:A>C",
+      "qc_status": "SELECTED",
+      "reason": "TEACHING_QC_PASS",
+      "qual": 60.0,
+      "filter": "PASS",
+      "source_line": 5
+    },
+    {
+      "variant_id": "chr1:110:A>G",
+      "qc_status": "SELECTED",
+      "reason": "TEACHING_QC_PASS",
+      "qual": 50.0,
+      "filter": "PASS",
+      "source_line": 6
+    },
+    {
+      "variant_id": "chr1:110:A>C",
+      "qc_status": "SELECTED",
+      "reason": "TEACHING_QC_PASS",
+      "qual": 50.0,
+      "filter": "PASS",
+      "source_line": 6
+    },
+    {
+      "variant_id": "chr1:120:A>T",
+      "qc_status": "REJECTED",
+      "reason": "OUTSIDE_TEACHING_BED",
+      "qual": 10.0,
+      "filter": "PASS",
+      "source_line": 7
+    },
+    {
+      "variant_id": "chr1:130:A>G",
+      "qc_status": "REJECTED",
+      "reason": "FILTER_NOT_PASS",
+      "qual": 60.0,
+      "filter": "q10",
+      "source_line": 8
+    },
+    {
+      "variant_id": "chr1:140:G>T",
+      "qc_status": "REJECTED",
+      "reason": "OUTSIDE_TEACHING_BED",
+      "qual": 60.0,
+      "filter": "PASS",
+      "source_line": 9
+    },
+    {
+      "variant_id": "chr1:150:A>AT",
+      "qc_status": "REVIEW_REQUIRED",
+      "reason": "INDEL_NOT_NORMALIZED",
+      "qual": 60.0,
+      "filter": "PASS",
+      "source_line": 10
+    },
+    {
+      "variant_id": "chr1:160:A>T",
+      "qc_status": "REVIEW_REQUIRED",
+      "reason": "MISSING_QUAL",
+      "qual": null,
+      "filter": "PASS",
+      "source_line": 11
+    }
+  ],
+  "review_packet": [
+    {
+      "variant_id": "chr1:100:A>C",
+      "synthetic_score": 0.42,
+      "score_status": "SYNTHETIC_SCORE",
+      "review_status": "REVIEW_REQUIRED",
+      "evidence_class": "SYNTHETIC_FIXTURE"
+    },
+    {
+      "variant_id": "chr1:110:A>G",
+      "synthetic_score": -0.17,
+      "score_status": "SYNTHETIC_SCORE",
+      "review_status": "REVIEW_REQUIRED",
+      "evidence_class": "SYNTHETIC_FIXTURE"
+    },
+    {
+      "variant_id": "chr1:110:A>C",
+      "synthetic_score": null,
+      "score_status": "MISSING_SCORE",
+      "review_status": "REVIEW_REQUIRED",
+      "evidence_class": "SYNTHETIC_FIXTURE"
+    }
+  ],
+  "score_source": "SYNTHETIC_FIXTURE_ONLY",
+  "atlas_query_performed": false,
+  "clinical_interpretation": false,
+  "real_api_calls_this_run": 0,
+  "input_provenance": {
+    "vcf": {
+      "filename": "day21_synthetic.vcf",
+      "sha256": "adfc480a659e581a4d69f6b7b01890016ddc6ad0d6de6e709521fc6c2804800d"
+    },
+    "reference": {
+      "filename": "day21_toy_reference.json",
+      "sha256": "43e8cda00040afb123073f628b1249826f37d4fb4732aed578bf64ab28f9cd5a"
+    },
+    "regions": {
+      "filename": "day21_synthetic_regions.bed",
+      "sha256": "219e3264fc7b05d0d3c5ee8af57e07d6cb80df4e7618bcf11be4af2b7640a910"
+    },
+    "scores": {
+      "filename": "day21_synthetic_scores.json",
+      "sha256": "77f8ed4d642a12f1c04df271abeb5e54a844a0812279ebb26fe3c9f19fc0ee75"
+    }
+  }
+}

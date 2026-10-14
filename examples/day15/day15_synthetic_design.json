@@ -1,0 +1,14 @@
+{
+  "schema_version": "DAY15_SYNTHETIC_DESIGN_V1",
+  "data_kind": "SYNTHETIC_EDUCATIONAL_DEMO",
+  "assembly": "TOY_NOT_GRCH38",
+  "chromosome": "chrToy",
+  "start_1based": 101,
+  "reference_sequence": "ACGT",
+  "planned_repeats": 3,
+  "randomization_seed": 20261012,
+  "hypothesis_label": "SYNTHETIC_SPLICE_QUESTION_ONLY",
+  "assay_route": "SPLICING_REPORTER_DESIGN_ONLY",
+  "clinical_interpretation": false,
+  "experiment_performed": false
+}

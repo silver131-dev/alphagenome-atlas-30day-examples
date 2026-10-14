@@ -1,0 +1,28 @@
+{
+  "data_kind": "SYNTHETIC_EDUCATIONAL_DEMO",
+  "genome_build": "TOY_NOT_GRCH38",
+  "variant": "chrToy:101:A>G",
+  "assay": "splicing_proxy_delta",
+  "model_prediction_performed": false,
+  "real_api_calls_this_run": 0,
+  "rows": [
+    {
+      "biosample": "Neuron-like",
+      "score": 0.35,
+      "score_status": "SYNTHETIC_NUMBER",
+      "experimental_observation": "NOT_PERFORMED"
+    },
+    {
+      "biosample": "Blood-like",
+      "score": 0.0,
+      "score_status": "SYNTHETIC_NUMBER",
+      "experimental_observation": "NOT_PERFORMED"
+    },
+    {
+      "biosample": "Liver-like",
+      "score": null,
+      "score_status": "MISSING_SCORE",
+      "experimental_observation": "NOT_PERFORMED"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>Day27 | AlphaVariant OFFLINE CLI</title>
+<style>body{margin:0;background:#E5DEDA;color:#334155;font:16px/1.6 system-ui,"Noto Sans TC",sans-serif}
+main{max-width:1250px;margin:auto;padding:30px 22px 70px}
+.hero{background:#fffaf8;padding:24px;border-radius:18px}h1{margin:0}
+.warn{border-left:5px solid #a76565;padding:14px;background:#fff1e7;margin:20px 0;border-radius:9px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.card,section{padding:20px;background:#fffaf8;border-radius:16px;margin:14px 0}
+.num{font-size:2rem;font-weight:800;color:#356681}.sub{font-size:.8rem;color:#64748b}
+table{width:100%;border-collapse:collapse}td,th{text-align:left;padding:10px;border-bottom:1px solid #e7d7d3}
+th{background:#f4e8e3}a{color:#315b83}img{width:100%;max-height:540px;object-fit:contain}
+footer{font-size:.85rem;color:#697386}</style></head><body><main>
+<div class="hero"><h1>Day 27｜封裝分析流程 — 打造自己的 AlphaVariant CLI</h1>
+<p>一條指令串起 Day 21–26 的六個獨立、合成的分析模組。</p></div>
+<div class="warn"><strong>OFFLINE ONLY · SYNTHETIC · TOY_NOT_GRCH38</strong><br>
+沒有 AlphaGenome Atlas／Model LIVE API、沒有病人資料、沒有醫療判斷。
+這是教學 CLI，不是私人 GitHub v0.1.0 的 alpha-variant 正式程式。</div>
+<div class="cards"><div class="card"><div class="num">8</div><div class="sub">ALT 候選</div></div>
+<div class="card"><div class="num">3</div><div class="sub">通過教學 QC</div></div>
+<div class="card"><div class="num">1</div><div class="sub">缺人工分數</div></div>
+<div class="card"><div class="num">6</div><div class="sub">獨立模組</div></div></div>
+<section><h2>依序執行的六個階段</h2><table><thead><tr><th>階段</th><th>重用模組</th><th>證據</th><th>結果</th></tr></thead><tbody><tr><td>Day 21</td><td>day21_offline_vcf_review_lab</td><td><a href='day21/day21_review_packet.json'>JSON</a></td><td>PASS</td></tr>
+<tr><td>Day 22</td><td>day22_offline_qc_explorer_lab</td><td><a href='day22/day22_qc_report.json'>JSON</a></td><td>PASS</td></tr>
+<tr><td>Day 23</td><td>day23_offline_annotation_lab</td><td><a href='day23/day23_annotation_report.json'>JSON</a></td><td>PASS</td></tr>
+<tr><td>Day 24</td><td>day24_offline_refalt_track_lab</td><td><a href='day24/day24_track_delta_report.json'>JSON</a></td><td>PASS</td></tr>
+<tr><td>Day 25</td><td>day25_offline_locus_plot_lab</td><td><a href='day25/day25_locus_summary.json'>JSON</a></td><td>PASS</td></tr>
+<tr><td>Day 26</td><td>day26_offline_ppm_motif_lab</td><td><a href='day26/day26_motif_report.json'>JSON</a></td><td>PASS</td></tr></tbody></table></section>
+<section><h2>CLI Pipeline Overview</h2><img src="day27_pipeline_flow.svg" alt="Synthetic pipeline stages Day 21 through 26"></section>
+<section><h2>Day 25 曲線與 Day 26 序列偏好</h2>
+<p>兩份不同的合成資料，只以人工變異識別碼串聯，不合併分數，也不推論真實生物機制。</p>
+<p><a href="day25/day25_locus_view.html">Day25 軌跡檢視</a> · <a href="day26/day26_motif_view.html">Day26 PPM 檢視</a></p>
+<p><a href="day27_pipeline_summary.json">整合摘要 JSON</a> ·
+<a href="day27_run_manifest.json">SHA-256 檔案紀錄</a> · <a href="day27_stages.csv">分階段 CSV</a></p></section>
+<footer>Evidence: SYNTHETIC_EDUCATIONAL_DEMO · TOY_NOT_GRCH38 · Real API calls: 0 · Review: REQUIRED</footer>
+</main></body></html>

@@ -1,0 +1,22 @@
+{
+  "evidence_class": "SYNTHETIC_EDUCATIONAL_DEMO",
+  "assembly": "TOY_NOT_GRCH38",
+  "chromosome": "chrToy",
+  "toy_chromosome_length_bp": 2000000,
+  "anchor_1based": 1000000,
+  "windows_bp": {"local": 100000, "expanded": 1048576},
+  "contact_map_measured": false,
+  "experimental_validation_performed": false,
+  "features": [
+    {"id": "TARGET", "kind": "TARGET_GENE", "position_1based": 1000000, "evidence_class": "SYNTHETIC_FIXTURE"},
+    {"id": "NEAR_ENHANCER", "kind": "ENHANCER_CANDIDATE", "position_1based": 1010000, "evidence_class": "SYNTHETIC_FIXTURE"},
+    {"id": "DISTAL_ENHANCER", "kind": "ENHANCER_CANDIDATE", "position_1based": 1400000, "evidence_class": "SYNTHETIC_FIXTURE"},
+    {"id": "LEFT_EDGE_IN", "kind": "ENHANCER_CANDIDATE", "position_1based": 475712, "evidence_class": "SYNTHETIC_FIXTURE"},
+    {"id": "LEFT_EDGE_OUT", "kind": "ENHANCER_CANDIDATE", "position_1based": 475711, "evidence_class": "SYNTHETIC_FIXTURE"},
+    {"id": "RIGHT_EDGE_IN", "kind": "ENHANCER_CANDIDATE", "position_1based": 1524287, "evidence_class": "SYNTHETIC_FIXTURE"},
+    {"id": "RIGHT_EDGE_OUT", "kind": "ENHANCER_CANDIDATE", "position_1based": 1524288, "evidence_class": "SYNTHETIC_FIXTURE"}
+  ],
+  "hypothetical_links": [
+    {"candidate_id": "DISTAL_ENHANCER", "target_id": "TARGET", "status": "HYPOTHESIS_NOT_MEASURED"}
+  ]
+}

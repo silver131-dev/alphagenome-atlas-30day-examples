@@ -1,0 +1,30 @@
+{
+  "schema_version": "day28.synthetic.report_manifest.v1",
+  "mode": "OFFLINE_ONLY",
+  "artifact_count": 5,
+  "artifacts": {
+    "day28_evidence_report.json": {
+      "sha256": "068967ac8644326e044b319b14a7e5f95e92379fe72d72d558cd2e0788396d29",
+      "bytes": 3355
+    },
+    "day28_evidence_report.md": {
+      "sha256": "98efc8304bef9d170ddb9ebea7d7b7ff9a746f55dbedbeea82848327800d9005",
+      "bytes": 2504
+    },
+    "day28_evidence_dashboard.html": {
+      "sha256": "e87480bbc29d2d83eba42d1ba40fe669eaeef6f70830e1fec2b90655c3e76ef8",
+      "bytes": 3534
+    },
+    "day28_evidence_map.svg": {
+      "sha256": "a71cc7087fdc9f192c7e72037ca336fa6a9c16092d8c1c96e43e4307602b3338",
+      "bytes": 2587
+    },
+    "day28_evidence_table.csv": {
+      "sha256": "9994c835927c9acc1cf1b550a1c20b6de98ee3e651f5de217c4e4c3334d80d82",
+      "bytes": 268
+    }
+  },
+  "source_day27_manifest_sha256": "a2d54c70e189dc7dd50691d713c8b6490f9ae72602e094fc061a50bda72e6ff7",
+  "signed": false,
+  "real_api_calls_this_run": 0
+}

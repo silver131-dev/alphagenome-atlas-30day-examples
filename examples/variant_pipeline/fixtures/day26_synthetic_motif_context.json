@@ -1,0 +1,22 @@
+{
+  "schema_version": "day26.synthetic.ppm_context.v1",
+  "evidence_class": "SYNTHETIC_EDUCATIONAL_DEMO",
+  "mode": "OFFLINE_ONLY",
+  "assembly": "TOY_NOT_GRCH38",
+  "chrom": "chr1",
+  "start_1based": 104,
+  "ref_sequence": "TACCTGACATGGTCAAC",
+  "variant_id": "chr1:110:A>G",
+  "anchor_start_1based": 109,
+  "motifs": [
+    {"motif_id": "MOTIF_A", "preferred_sequence": "GACAT"},
+    {"motif_id": "MOTIF_B", "preferred_sequence": "GGCAT"}
+  ],
+  "preferred_probability": 0.7,
+  "other_probability": 0.1,
+  "scan_strand": "+",
+  "model_prediction": false,
+  "official_motif_atlas": false,
+  "clinical_interpretation": false,
+  "real_api_calls_this_run": 0
+}

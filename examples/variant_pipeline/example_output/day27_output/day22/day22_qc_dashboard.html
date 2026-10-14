@@ -1,0 +1,52 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Day22 | Offline VCF QC Inspector</title>
+<style>:root{font:16px/1.6 system-ui,"Noto Sans TC",sans-serif;color:#263b51;background:#f1f4f8}
+body{max-width:1140px;margin:auto;padding:32px 18px 64px}h1{margin:0;font-size:1.8rem}.lead{color:#526477}
+.notice{background:#fff4dc;border-left:6px solid #bc833b;padding:16px;margin:20px 0;border-radius:8px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px}
+.stats div,section{background:white;border:1px solid #dce4ed;border-radius:14px;padding:16px;margin-top:15px}
+.number{font-size:2rem;font-weight:800;color:#346b97}.sub{font-size:.85rem;color:#667789}
+table{width:100%;border-collapse:collapse}th,td{padding:9px;text-align:left;border-bottom:1px solid #e9ebed;vertical-align:top}
+th{background:#e9eff5}section{overflow-x:auto}details{padding:12px;border-bottom:1px solid #dce4ed}
+summary{cursor:pointer;font-weight:600}code{background:#f2f5f8;padding:2px 4px}.warn{color:#8d3639}
+footer{font-size:.84rem;color:#53657b;margin-top:24px}</style></head><body>
+<h1>Day 22｜VCF 資料前處理 — FILTER、QUAL、REF 與 BED QC</h1>
+<p class="lead">從 Day21 同一批人工候選資料，觀察「第一個決定性原因」如何產生。</p>
+<div class="notice"><strong>OFFLINE · SYNTHETIC EDUCATIONAL DEMO</strong><br>
+參考序列是 200 個人工 A，基因組標記 TOY_NOT_GRCH38。沒有患者、真實模型、AlphaGenome API 或臨床判讀。</div>
+<div class="stats"><div><span class="number">8</span><br><span class="sub">ALT 候選</span></div>
+<div><span class="number">3</span><br><span class="sub">SELECTED</span></div>
+<div><span class="number">2</span><br><span class="sub">QC 待審</span></div>
+<div><span class="number">3</span><br><span class="sub">REJECTED</span></div></div>
+<section><h2>1｜QC 主表</h2><p>判定順序：FILTER → BED → REF → INDEL → MISSING_QUAL → LOW_QUAL。</p>
+<p>只記錄第一個決定性原因，不表示其他尚未執行的檢查已通過。</p>
+<table><thead><tr><th>變異</th><th>狀態</th><th>原因</th><th>BED anchor</th><th>QUAL</th><th>已檢查步驟</th></tr></thead><tbody><tr><td>chr1:100:A&gt;C</td><td>SELECTED</td><td>TEACHING_QC_PASS</td><td>99</td><td>60.0</td><td>FILTER → BED → REF → INDEL → MISSING_QUAL → LOW_QUAL</td></tr>
+<tr><td>chr1:110:A&gt;G</td><td>SELECTED</td><td>TEACHING_QC_PASS</td><td>109</td><td>50.0</td><td>FILTER → BED → REF → INDEL → MISSING_QUAL → LOW_QUAL</td></tr>
+<tr><td>chr1:110:A&gt;C</td><td>SELECTED</td><td>TEACHING_QC_PASS</td><td>109</td><td>50.0</td><td>FILTER → BED → REF → INDEL → MISSING_QUAL → LOW_QUAL</td></tr>
+<tr><td>chr1:120:A&gt;T</td><td>REJECTED</td><td>OUTSIDE_TEACHING_BED</td><td>119</td><td>10.0</td><td>FILTER → BED</td></tr>
+<tr><td>chr1:130:A&gt;G</td><td>REJECTED</td><td>FILTER_NOT_PASS</td><td>129</td><td>60.0</td><td>FILTER</td></tr>
+<tr><td>chr1:140:G&gt;T</td><td>REJECTED</td><td>OUTSIDE_TEACHING_BED</td><td>139</td><td>60.0</td><td>FILTER → BED</td></tr>
+<tr><td>chr1:150:A&gt;AT</td><td>REVIEW_REQUIRED</td><td>INDEL_NOT_NORMALIZED</td><td>149</td><td>60.0</td><td>FILTER → BED → REF → INDEL</td></tr>
+<tr><td>chr1:160:A&gt;T</td><td>REVIEW_REQUIRED</td><td>MISSING_QUAL</td><td>159</td><td>null</td><td>FILTER → BED → REF → INDEL → MISSING_QUAL</td></tr></tbody></table></section>
+<section><h2>2｜打開 QC 決策路徑</h2><details><summary>chr1:100:A&gt;C · TEACHING_QC_PASS</summary><ol><li>FILTER：PASS — FILTER=PASS</li><li>BED：PASS — VCF POS 100 -&gt; BED anchor 99</li><li>REF：PASS — REF matches artificial reference</li><li>INDEL：PASS — SNV teaching subset</li><li>MISSING_QUAL：PASS — QUAL present</li><li>LOW_QUAL：PASS — QUAL compared against artificial threshold 20</li></ol><p>未繼續檢查：無</p></details>
+<details><summary>chr1:110:A&gt;G · TEACHING_QC_PASS</summary><ol><li>FILTER：PASS — FILTER=PASS</li><li>BED：PASS — VCF POS 110 -&gt; BED anchor 109</li><li>REF：PASS — REF matches artificial reference</li><li>INDEL：PASS — SNV teaching subset</li><li>MISSING_QUAL：PASS — QUAL present</li><li>LOW_QUAL：PASS — QUAL compared against artificial threshold 20</li></ol><p>未繼續檢查：無</p></details>
+<details><summary>chr1:110:A&gt;C · TEACHING_QC_PASS</summary><ol><li>FILTER：PASS — FILTER=PASS</li><li>BED：PASS — VCF POS 110 -&gt; BED anchor 109</li><li>REF：PASS — REF matches artificial reference</li><li>INDEL：PASS — SNV teaching subset</li><li>MISSING_QUAL：PASS — QUAL present</li><li>LOW_QUAL：PASS — QUAL compared against artificial threshold 20</li></ol><p>未繼續檢查：無</p></details>
+<details><summary>chr1:120:A&gt;T · OUTSIDE_TEACHING_BED</summary><ol><li>FILTER：PASS — FILTER=PASS</li><li>BED：STOP — VCF POS 120 -&gt; BED anchor 119</li></ol><p>未繼續檢查：REF, INDEL, MISSING_QUAL, LOW_QUAL</p></details>
+<details><summary>chr1:130:A&gt;G · FILTER_NOT_PASS</summary><ol><li>FILTER：STOP — FILTER is not PASS</li></ol><p>未繼續檢查：BED, REF, INDEL, MISSING_QUAL, LOW_QUAL</p></details>
+<details><summary>chr1:140:G&gt;T · OUTSIDE_TEACHING_BED</summary><ol><li>FILTER：PASS — FILTER=PASS</li><li>BED：STOP — VCF POS 140 -&gt; BED anchor 139</li></ol><p>未繼續檢查：REF, INDEL, MISSING_QUAL, LOW_QUAL</p></details>
+<details><summary>chr1:150:A&gt;AT · INDEL_NOT_NORMALIZED</summary><ol><li>FILTER：PASS — FILTER=PASS</li><li>BED：PASS — VCF POS 150 -&gt; BED anchor 149</li><li>REF：PASS — REF matches artificial reference</li><li>INDEL：STOP — indel requires independent normalization/review</li></ol><p>未繼續檢查：MISSING_QUAL, LOW_QUAL</p></details>
+<details><summary>chr1:160:A&gt;T · MISSING_QUAL</summary><ol><li>FILTER：PASS — FILTER=PASS</li><li>BED：PASS — VCF POS 160 -&gt; BED anchor 159</li><li>REF：PASS — REF matches artificial reference</li><li>INDEL：PASS — SNV teaching subset</li><li>MISSING_QUAL：STOP — QUAL missing (dot in synthetic VCF)</li></ol><p>未繼續檢查：LOW_QUAL</p></details></section>
+<section><h2>3｜另外建立、位於 BED 內的人工探針</h2>
+<p>預設 POS 120 的低 QUAL、POS 140 的 REF mismatch 都先被 BED 排除。用 POS 105/106 才能真正檢查 LOW_QUAL 和 REF_MISMATCH。</p>
+<table><thead><tr><th>探針</th><th>變異</th><th>狀態</th><th>原因</th><th>檢查路徑</th></tr></thead><tbody><tr><td>LOW_QUAL_INSIDE_BED</td><td>chr1:105:A&gt;T</td><td>REJECTED</td><td>LOW_QUAL</td><td>FILTER → BED → REF → INDEL → MISSING_QUAL → LOW_QUAL</td></tr>
+<tr><td>REF_MISMATCH_INSIDE_BED</td><td>chr1:106:G&gt;T</td><td>REJECTED</td><td>REF_MISMATCH</td><td>FILTER → BED → REF</td></tr>
+<tr><td>LOW_QUAL_OUTSIDE_BED</td><td>chr1:120:A&gt;T</td><td>REJECTED</td><td>OUTSIDE_TEACHING_BED</td><td>FILTER → BED</td></tr>
+<tr><td>REF_MISMATCH_OUTSIDE_BED</td><td>chr1:140:G&gt;T</td><td>REJECTED</td><td>OUTSIDE_TEACHING_BED</td><td>FILTER → BED</td></tr>
+<tr><td>BED_FIRST_INCLUDED_POS</td><td>chr1:91:A&gt;C</td><td>SELECTED</td><td>TEACHING_QC_PASS</td><td>FILTER → BED → REF → INDEL → MISSING_QUAL → LOW_QUAL</td></tr>
+<tr><td>BED_LAST_INCLUDED_POS</td><td>chr1:115:A&gt;C</td><td>SELECTED</td><td>TEACHING_QC_PASS</td><td>FILTER → BED → REF → INDEL → MISSING_QUAL → LOW_QUAL</td></tr>
+<tr><td>BED_FIRST_EXCLUDED_POS</td><td>chr1:116:A&gt;C</td><td>REJECTED</td><td>OUTSIDE_TEACHING_BED</td><td>FILTER → BED</td></tr>
+<tr><td>SECOND_BED_FIRST_INCLUDED_POS</td><td>chr1:146:A&gt;C</td><td>SELECTED</td><td>TEACHING_QC_PASS</td><td>FILTER → BED → REF → INDEL → MISSING_QUAL → LOW_QUAL</td></tr>
+<tr><td>INDEL_NEEDS_REVIEW</td><td>chr1:150:A&gt;AT</td><td>REVIEW_REQUIRED</td><td>INDEL_NOT_NORMALIZED</td><td>FILTER → BED → REF → INDEL</td></tr>
+<tr><td>MISSING_QUAL_NEEDS_REVIEW</td><td>chr1:160:A&gt;T</td><td>REVIEW_REQUIRED</td><td>MISSING_QUAL</td><td>FILTER → BED → REF → INDEL → MISSING_QUAL</td></tr></tbody></table></section>
+<footer>資料來源：DAY21_BYTE_IDENTICAL_SYNTHETIC_FIXTURES · TOY_NOT_GRCH38 · atlas_query_performed=false · real_api_calls_this_run=0。<br>
+僅練習教學 QC；此處用 POS−1 作 BED anchor 判定，indel 仍須正常化及更嚴謹的跨區間處理。</footer></body></html>

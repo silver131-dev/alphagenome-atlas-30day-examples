@@ -1,0 +1,8 @@
+{
+  "data_kind": "SYNTHETIC_FIXTURE",
+  "assembly": "TOY_NOT_GRCH38",
+  "scores": {
+    "chr1:100:A>C": 0.42,
+    "chr1:110:A>G": -0.17
+  }
+}

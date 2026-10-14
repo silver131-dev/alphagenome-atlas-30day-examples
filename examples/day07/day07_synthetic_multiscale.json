@@ -1,0 +1,30 @@
+{
+  "evidence_class": "SYNTHETIC_EDUCATIONAL_DEMO",
+  "assembly": "TOY_NOT_GRCH38",
+  "chrom": "chrToy",
+  "sequence_start_1based": 1001,
+  "sequence": "AAAAAAAAAAACGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAATGAAAAAAAAAAAA",
+  "bin_size": 8,
+  "local_motif": "ACG",
+  "distal_motif": "TGA",
+  "local_motif_start_1based": 1011,
+  "distal_motif_start_1based": 1051,
+  "variants": [
+    {
+      "label": "DISTAL_CHANGE",
+      "variant_id": "chrToy:1051:T>G",
+      "position_1based": 1051,
+      "ref": "T",
+      "alt": "G",
+      "source": "SYNTHETIC_FIXTURE"
+    },
+    {
+      "label": "LOCAL_CHANGE",
+      "variant_id": "chrToy:1012:C>A",
+      "position_1based": 1012,
+      "ref": "C",
+      "alt": "A",
+      "source": "SYNTHETIC_FIXTURE"
+    }
+  ]
+}

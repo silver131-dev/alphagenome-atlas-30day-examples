@@ -1,0 +1,35 @@
+{
+  "artifact_count": 6,
+  "artifacts": {
+    "day29_local_preview.json": {
+      "bytes": 419,
+      "sha256": "d13ae79af8cf2a154b13b9b1b2b52aa36952ef42b5e862fee429aaed556326b9"
+    },
+    "day29_privacy_audit.json": {
+      "bytes": 1866,
+      "sha256": "97e45851cdeb6f9194edc72ee6678436fdd018482578e66df184e4d53f177bce"
+    },
+    "day29_privacy_dashboard.html": {
+      "bytes": 1853,
+      "sha256": "344a26ceec2efaec889d8f581e1ff486be7b6ba6f4d1da9fa6e4818ce66f3299"
+    },
+    "day29_privacy_flow.svg": {
+      "bytes": 3746,
+      "sha256": "54483b98f838f11ccf414f316edea403819e0692e880e8b9e9dd9f1f158fb9dd"
+    },
+    "day29_privacy_report.md": {
+      "bytes": 1697,
+      "sha256": "1a1ba9563c0c9e293f837be4bb9afcf8c9ef2660070fe52a057193a9c8c37e19"
+    },
+    "day29_release_decision.csv": {
+      "bytes": 175,
+      "sha256": "3748bf37b4daceabe325c5ab0c5dd9552b5b77a12bb0aea7e8176f438fd098f9"
+    }
+  },
+  "mode": "OFFLINE_ONLY",
+  "real_api_calls_this_run": 0,
+  "schema_version": "day29.synthetic.report_manifest.v1",
+  "signed": false,
+  "source_manifest_sha256": "0ceb07d5c003123058e9092dfc4479e7c0b9e64b00fbfe35d63711ce66da320a",
+  "source_report_sha256": "068967ac8644326e044b319b14a7e5f95e92379fe72d72d558cd2e0788396d29"
+}

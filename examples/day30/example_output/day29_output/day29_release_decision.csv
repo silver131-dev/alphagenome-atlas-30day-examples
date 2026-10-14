@@ -1,0 +1,2 @@
+data_kind,mode,release_gate,external_transfer_allowed,human_approval_completed,anonymization_claim
+SYNTHETIC_EDUCATIONAL_DEMO,OFFLINE_ONLY,BLOCKED,false,false,NOT_ESTABLISHED

@@ -1,0 +1,5 @@
+motif_id	chrom	start_0based	end_0based	evidence_class
+A	chr1	99	104	SYNTHETIC_FIXTURE
+B	chr1	109	114	SYNTHETIC_FIXTURE
+C	chr1	120	126	SYNTHETIC_FIXTURE
+D	chr2	99	103	SYNTHETIC_FIXTURE

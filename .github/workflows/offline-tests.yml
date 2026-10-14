@@ -1,0 +1,17 @@
+name: Offline educational unit tests
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  stdlib-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check for common accidentally committed credentials
+        run: python scripts/check_repo_safety.py
+      - name: Run all purely offline examples
+        run: python scripts/run_tests.py

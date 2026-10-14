@@ -1,0 +1,14 @@
+{
+  "data_kind": "SYNTHETIC_EDUCATIONAL_DEMO",
+  "assembly": "TOY_NOT_GRCH38",
+  "schema_version": "1.0",
+  "cases": [
+    {"case_id": "TOY_MISSENSE_SHAPE", "variant": "chrToy:101:A>G", "consequence": "MISSENSE", "research_question": "PROTEIN_STRUCTURE"},
+    {"case_id": "TOY_MISSENSE_COMPLEX", "variant": "chrToy:102:C>T", "consequence": "MISSENSE", "research_question": "MOLECULAR_COMPLEX"},
+    {"case_id": "TOY_PROMOTER_EXPR", "variant": "chrToy:201:A>C", "consequence": "PROMOTER", "research_question": "GENE_EXPRESSION"},
+    {"case_id": "TOY_INTRON_SPLICE", "variant": "chrToy:301:G>A", "consequence": "INTRONIC", "research_question": "RNA_SPLICING"},
+    {"case_id": "TOY_MISSENSE_SPLICE", "variant": "chrToy:302:C>G", "consequence": "MISSENSE", "research_question": "RNA_SPLICING"},
+    {"case_id": "TOY_PROMOTER_STRUCTURE", "variant": "chrToy:401:T>C", "consequence": "PROMOTER", "research_question": "PROTEIN_STRUCTURE"},
+    {"case_id": "TOY_UNKNOWN", "variant": "chrToy:501:A>T", "consequence": "UNKNOWN", "research_question": "UNSPECIFIED"}
+  ]
+}

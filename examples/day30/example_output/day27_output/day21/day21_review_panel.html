@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Day 21 | Synthetic VCF Review Packet</title><style>
+:root{color-scheme:light;font-family:system-ui,"Noto Sans TC",sans-serif;color:#283348;background:#f7f5f2}
+body{margin:0 auto;padding:28px 22px 60px;max-width:1100px}
+h1{font-size:1.8rem;margin:0 0 6px}.intro{color:#536378}.warn{background:#fff2dd;border-left:5px solid #bd783b;padding:14px 18px;margin:20px 0;border-radius:8px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:20px 0}
+.stat{background:#fff;border:1px solid #e1e2e5;border-radius:14px;padding:18px}.num{font-size:2rem;font-weight:750;color:#285b87}.label{font-size:.88rem;color:#5b6982}
+section{background:#fff;border:1px solid #e1e2e5;border-radius:14px;padding:18px;margin-top:20px;overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:.9rem}th,td{text-align:left;padding:11px;border-bottom:1px solid #eee}th{background:#eef2fa}.pill{font-size:.8rem;background:#e6edf4;border-radius:7px;padding:4px 7px}.missing{color:#ae3b41;font-weight:700}
+footer{font-size:.83rem;color:#5b6982;margin-top:30px}</style></head><body>
+<h1>Day 21 | 從 VCF 到研究審閱封包</h1><div class="intro">QC → Fixture 註釋 → Evidence / Human Review</div>
+<div class="warn"><strong>SYNTHETIC EDUCATIONAL DEMO</strong>：所有資料人工合成，非 GRCh38、非 AlphaGenome API 分數，未進行臨床判定。OFFLINE_ONLY。</div>
+<div class="stats"><div class="stat"><div class="num">8</div><div class="label">ALT 候選</div></div>
+<div class="stat"><div class="num">3</div><div class="label">SELECTED</div></div>
+<div class="stat"><div class="num">2</div><div class="label">QC REVIEW_REQUIRED</div></div>
+<div class="stat"><div class="num">3</div><div class="label">REJECTED</div></div></div>
+<section><h2>第一站｜QC 全部候選（保留失敗理由）</h2><p>順序：FILTER → BED → REF → INDEL → MISSING_QUAL → LOW_QUAL；每筆記錄第一個決定性原因。</p>
+<table><thead><tr><th>Variant</th><th>QC Status</th><th>Reason</th><th>QUAL</th></tr></thead><tbody><tr><td>chr1:100:A&gt;C</td><td><span class="pill">SELECTED</span></td><td>TEACHING_QC_PASS</td><td>60.0</td></tr>
+<tr><td>chr1:110:A&gt;G</td><td><span class="pill">SELECTED</span></td><td>TEACHING_QC_PASS</td><td>50.0</td></tr>
+<tr><td>chr1:110:A&gt;C</td><td><span class="pill">SELECTED</span></td><td>TEACHING_QC_PASS</td><td>50.0</td></tr>
+<tr><td>chr1:120:A&gt;T</td><td><span class="pill">REJECTED</span></td><td>OUTSIDE_TEACHING_BED</td><td>10.0</td></tr>
+<tr><td>chr1:130:A&gt;G</td><td><span class="pill">REJECTED</span></td><td>FILTER_NOT_PASS</td><td>60.0</td></tr>
+<tr><td>chr1:140:G&gt;T</td><td><span class="pill">REJECTED</span></td><td>OUTSIDE_TEACHING_BED</td><td>60.0</td></tr>
+<tr><td>chr1:150:A&gt;AT</td><td><span class="pill">REVIEW_REQUIRED</span></td><td>INDEL_NOT_NORMALIZED</td><td>60.0</td></tr>
+<tr><td>chr1:160:A&gt;T</td><td><span class="pill">REVIEW_REQUIRED</span></td><td>MISSING_QUAL</td><td><span class="missing">null</span></td></tr></tbody></table></section>
+<section><h2>第二站｜可供人工審閱的候選封包</h2><p>只有 SELECTED 進入此表；但所有八筆仍保留在 QC 表。缺分數記為 null，不填零。</p>
+<table><thead><tr><th>Variant</th><th>Artificial Score</th><th>Score Status</th><th>Review Status</th></tr></thead><tbody><tr><td>chr1:100:A&gt;C</td><td>0.42</td><td>SYNTHETIC_SCORE</td><td>REVIEW_REQUIRED</td></tr>
+<tr><td>chr1:110:A&gt;G</td><td>-0.17</td><td>SYNTHETIC_SCORE</td><td>REVIEW_REQUIRED</td></tr>
+<tr><td>chr1:110:A&gt;C</td><td><span class="missing">null</span></td><td>MISSING_SCORE</td><td>REVIEW_REQUIRED</td></tr></tbody></table></section>
+<footer>Evidence: SYNTHETIC_FIXTURE_ONLY · assembly: TOY_NOT_GRCH38 · atlas_query_performed: false · real_api_calls_this_run: 0 · 研究用教學，非醫療建議。</footer>
+</body></html>

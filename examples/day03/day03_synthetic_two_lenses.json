@@ -1,0 +1,20 @@
+{
+  "data_kind": "SYNTHETIC_EDUCATIONAL_DEMO",
+  "genome_build": "TOY_NOT_GRCH38",
+  "dataset_id": "DAY03_TWO_COMPLEMENTARY_LENSES_V1",
+  "dataset_note": "All coordinates, conservation scores and molecular deltas are fabricated. Toy phyloP-like values are not calibrated UCSC phyloP scores. Molecular deltas are not AlphaGenome predictions.",
+  "teaching_thresholds": {
+    "conservation_positive_min": 2.0,
+    "acceleration_negative_max": -2.0,
+    "molecular_abs_delta_min": 0.25
+  },
+  "variants": [
+    {"variant_id": "chrToy:100:A>G", "toy_phyloP_like": 3.1, "toy_splicing_delta": 0.04, "biosample": "TOY_NEURON", "teaching_note": "演化訊號突出；本例的人工剪接差分很小。"},
+    {"variant_id": "chrToy:101:C>T", "toy_phyloP_like": 0.1, "toy_splicing_delta": -0.42, "biosample": "TOY_NEURON", "teaching_note": "演化訊號不突出；人工分子差分較大。"},
+    {"variant_id": "chrToy:102:G>C", "toy_phyloP_like": 2.8, "toy_splicing_delta": 0.37, "biosample": "TOY_NEURON", "teaching_note": "兩種人工線索都突出，但仍非因果證據。"},
+    {"variant_id": "chrToy:103:T>A", "toy_phyloP_like": 0.2, "toy_splicing_delta": 0.02, "biosample": "TOY_NEURON", "teaching_note": "兩種人工線索都不突出，但不可判定良性。"},
+    {"variant_id": "chrToy:104:A>C", "toy_phyloP_like": null, "toy_splicing_delta": 0.33, "biosample": "TOY_NEURON", "teaching_note": "缺保守性資料；不得將 null 當作零。"},
+    {"variant_id": "chrToy:105:C>G", "toy_phyloP_like": -2.4, "toy_splicing_delta": 0.03, "biosample": "TOY_NEURON", "teaching_note": "負的 phyloP-like 代理值示意演化加速，不等於沒有功能。"},
+    {"variant_id": "chrToy:106:G>A", "toy_phyloP_like": 2.5, "toy_splicing_delta": null, "biosample": "TOY_NEURON", "teaching_note": "缺分子預測值；應保留缺失狀態。"}
+  ]
+}
